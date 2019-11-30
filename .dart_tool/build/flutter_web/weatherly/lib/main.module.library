@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/material.dart","weatherly|lib/page/home.dart","weatherly|lib/page/changeCity.dart","weatherly|lib/component/textStyle.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

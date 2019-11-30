@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flare_dart|lib/actor_component.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["collection"],"hasMain":false}

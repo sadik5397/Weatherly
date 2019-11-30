@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flare_dart|lib/stream_reader.dart","flare_dart|lib/animation/interpolation/interpolator.dart","flare_dart|lib/animation/interpolation/cubic_ease.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

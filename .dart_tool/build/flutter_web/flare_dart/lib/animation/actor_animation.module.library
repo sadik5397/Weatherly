@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flare_dart|lib/actor_artboard.dart","flare_dart|lib/actor_component.dart","flare_dart|lib/actor_event.dart","flare_dart|lib/stream_reader.dart","flare_dart|lib/animation/keyframe.dart","flare_dart|lib/animation/property_types.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

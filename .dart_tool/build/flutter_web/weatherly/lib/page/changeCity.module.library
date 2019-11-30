@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/material.dart","http|lib/http.dart","weatherly|lib/model/City.dart","weatherly|lib/page/home.dart","flutter|lib/services.dart","flare_flutter|lib/flare_actor.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["convert","async"],"hasMain":false}

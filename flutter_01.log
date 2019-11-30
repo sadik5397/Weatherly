@@ -1,0 +1,95 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color attach --machine --device-id=emulator-5554 lib\main.dart
+
+## exception
+
+ProcessException: ProcessException: Process exited abnormally:
+adb.exe: error: listener 'tcp:12569' not found
+  Command: E:\SDK\android\platform-tools\adb.exe -s emulator-5554 forward --remove tcp:12569
+
+```
+#0      RunResult.throwException (package:flutter_tools/src/base/process.dart:141:5)
+#1      _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart:275:19)
+<asynchronous suspension>
+#2      _AndroidDevicePortForwarder.unforward (package:flutter_tools/src/android/android_device.dart:1107:24)
+<asynchronous suspension>
+#3      AttachCommand._attachToDevice (package:flutter_tools/src/commands/attach.dart:339:36)
+<asynchronous suspension>
+#4      AttachCommand.runCommand.<anonymous closure> (package:flutter_tools/src/commands/attach.dart:174:19)
+#5      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:157:29)
+<asynchronous suspension>
+#6      _rootRun (dart:async/zone.dart:1124:13)
+#7      _CustomZone.run (dart:async/zone.dart:1021:19)
+#8      _runZoned (dart:async/zone.dart:1516:10)
+#9      runZoned (dart:async/zone.dart:1463:12)
+#10     AppContext.run (package:flutter_tools/src/base/context.dart:156:18)
+<asynchronous suspension>
+#11     AttachCommand.runCommand (package:flutter_tools/src/commands/attach.dart:173:19)
+<asynchronous suspension>
+#12     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:557:18)
+#13     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#14     _rootRunUnary (dart:async/zone.dart:1132:38)
+#15     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#16     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#17     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#18     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#19     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#20     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:552:7)
+#21     _rootRun (dart:async/zone.dart:1124:13)
+#22     _CustomZone.run (dart:async/zone.dart:1021:19)
+#23     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#24     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#25     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#26     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#27     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#28     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel master, v1.10.15-pre.249, on Microsoft Windows [Version 10.0.18362.476], locale en-US)
+    • Flutter version 1.10.15-pre.249 at E:\SDK\flutter
+    • Framework revision 56d94b0ea5 (5 weeks ago), 2019-10-24 14:52:06 -0400
+    • Engine revision 384a0b8d72
+    • Dart version 2.6.0 (build 2.6.0-dev.8.2 081c01e89a)
+
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.0-rc3)
+    • Android SDK at E:\SDK\android
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.0-rc3
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+    ✗ Android license status unknown.
+      Try re-installing or updating your Android SDK Manager.
+      See https://developer.android.com/studio/#downloads or visit https://flutter.dev/setup/#android-setup for detailed instructions.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop for Windows (Visual Studio Community 2019 16.3.10)
+    • Visual Studio at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community
+    • Visual Studio Community 2019 version 16.3.29519.87
+
+[✓] Android Studio (version 3.5)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin version 40.2.2
+    • Dart plugin version 191.8593
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+
+[✓] IntelliJ IDEA Ultimate Edition (version 2018.3)
+    • IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2
+    • Flutter plugin version 35.3.1
+    • Dart plugin version 183.6270
+
+[✓] Connected device (4 available)
+    • Android SDK built for x86 • emulator-5554 • android-x86    • Android 9 (API 28) (emulator)
+    • Windows                   • Windows       • windows-x64    • Microsoft Windows [Version 10.0.18362.476]
+    • Chrome                    • chrome        • web-javascript • Google Chrome 78.0.3904.108
+    • Web Server                • web-server    • web-javascript • Flutter Tools
+
+! Doctor found issues in 1 category.
+```

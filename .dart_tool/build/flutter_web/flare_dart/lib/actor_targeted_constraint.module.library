@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flare_dart|lib/actor_artboard.dart","flare_dart|lib/actor_component.dart","flare_dart|lib/actor_constraint.dart","flare_dart|lib/stream_reader.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

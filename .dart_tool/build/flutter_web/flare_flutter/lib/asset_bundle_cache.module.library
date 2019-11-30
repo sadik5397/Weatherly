@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter|lib/services.dart","flare_flutter|lib/cache.dart","flare_flutter|lib/cache_asset.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flare_dart|lib/actor_artboard.dart","flare_dart|lib/actor_component.dart","flare_dart|lib/actor_constraint.dart","flare_dart|lib/actor_skinnable.dart","flare_dart|lib/math/mat2d.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["typed_data"],"hasMain":false}
