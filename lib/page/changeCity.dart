@@ -43,70 +43,90 @@ Future<List> fetchCity() async {
 
 class _ChangeCityState extends State<ChangeCity> {
   Future city;
-  List<City> filteredCity = List();
+  List<City> allCity = [];
+  List<City> filteredCity = [];
+  bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
     city = fetchCity();
+    city.then((value){
+      setState(() {
+        this.allCity.addAll(value);
+        this.filteredCity.addAll(this.allCity);
+        this._isLoading = false;
+      });
+    });
+  }
+
+  List<City> filterData(List<City> data, String filter){
+    List<City> filteredData = [];
+    for(City e in data){
+      if(e.name.toLowerCase().contains(filter.toLowerCase())){
+      filteredData.add(e);
+      }
+    }
+    return filteredData;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: TextField(
-          autofocus: false,
-          maxLines: 1,
-          decoration: InputDecoration(
-            hintText: 'Search for Location',
+        appBar: AppBar(
+          title: TextField(
+            autofocus: false,
+            maxLines: 1,
+            decoration: InputDecoration(
+              hintText: 'Search for Location',
+            ),
+            onChanged: (string) {
+              if (string == "") {
+                setState(() {
+                  this.filteredCity.clear();
+                  this.filteredCity.addAll(this.allCity);
+                });
+              }else{
+                setState(() {
+                  this.filteredCity = filterData(allCity, string);
+                });
+              }
+            },
           ),
-          onChanged: (string) {
-            print(string);
-          },
         ),
-      ),
-      body: Center(
-        child: FutureBuilder<List>(
-          future: city,
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              return ListView.builder(
-                itemCount: snapshot.data.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: CircleAvatar(
-                      child: Text("${index + 1}"),
+        body: Center(
+          child: _isLoading ? // If its loading then show loading animation
+          FlareActor(
+            "lib/database/Earth.flr",
+            animation: "roll",
+            alignment: Alignment.center,
+          )
+              : ListView.builder(
+            itemCount: filteredCity.length,
+            itemBuilder: (context, index) {
+              return ListTile(
+                leading: CircleAvatar(
+                  child: Text("${index + 1}"),
+                ),
+                title: Text(filteredCity[index].name),
+                subtitle: Text(filteredCity[index].coord.lat.toString() +
+                    "," +
+                    filteredCity[index].coord.lon.toString()),
+                trailing: Text(filteredCity[index].country),
+                onTap: () {
+                  //Navigation
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return Home(filteredCity[index].name.toString());
+                      },
                     ),
-                    title: Text(snapshot.data[index].name),
-                    subtitle: Text(snapshot.data[index].coord.lat.toString() +
-                        "," +
-                        snapshot.data[index].coord.lon.toString()),
-                    trailing: Text(snapshot.data[index].country),
-                    onTap: () {
-                      //Navigation
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (BuildContext context) {
-                            return Home(snapshot.data[index].name.toString());
-                          },
-                        ),
-                      );
-                    },
                   );
                 },
               );
-            } else if (snapshot.hasError) {
-              return Text("${snapshot.error}");
-            }
-            return FlareActor(
-              "lib/database/Earth.flr",
-              animation: "roll",
-              alignment: Alignment.center,
-            );
-          },
-        ),
-      ),
+            }, // Item builder
+          ),
+        )
     );
   }
 }
