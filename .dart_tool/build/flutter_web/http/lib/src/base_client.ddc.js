@@ -96,9 +96,9 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
   const _maxRedirects = dart.privateName(base_request, "_maxRedirects");
   const _finalized = dart.privateName(base_request, "_finalized");
   const _checkFinalized$ = dart.privateName(base_request, "_checkFinalized");
-  const BaseRequest_method = dart.privateName(base_request, "BaseRequest.method");
-  const BaseRequest_url = dart.privateName(base_request, "BaseRequest.url");
-  const BaseRequest_headers = dart.privateName(base_request, "BaseRequest.headers");
+  const method$ = dart.privateName(base_request, "BaseRequest.method");
+  const url$ = dart.privateName(base_request, "BaseRequest.url");
+  const headers = dart.privateName(base_request, "BaseRequest.headers");
   base_request.BaseRequest = class BaseRequest extends core.Object {
     get method() {
       return this[method$];
@@ -191,9 +191,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     ;
   }).prototype = base_request.BaseRequest.prototype;
   dart.addTypeTests(base_request.BaseRequest);
-  const method$ = BaseRequest_method;
-  const url$ = BaseRequest_url;
-  const headers = BaseRequest_headers;
   dart.setMethodSignature(base_request.BaseRequest, () => ({
     __proto__: dart.getMethods(base_request.BaseRequest.__proto__),
     finalize: dart.fnType(byte_stream.ByteStream, []),
@@ -334,8 +331,8 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     [_bodyBytes]: dart.fieldType(typed_data.Uint8List)
   }));
   const _is_Pair_default = Symbol('_is_Pair_default');
-  const Pair_first = dart.privateName(utils, "Pair.first");
-  const Pair_last = dart.privateName(utils, "Pair.last");
+  const first$ = dart.privateName(utils, "Pair.first");
+  const last$ = dart.privateName(utils, "Pair.last");
   utils.Pair$ = dart.generic((E, F) => {
     class Pair extends core.Object {
       get first() {
@@ -369,8 +366,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     }).prototype = Pair.prototype;
     dart.addTypeTests(Pair);
     Pair.prototype[_is_Pair_default] = true;
-    const first$ = Pair_first;
-    const last$ = Pair_last;
     dart.setLibraryUri(Pair, "package:http/src/utils.dart");
     dart.setFieldSignature(Pair, () => ({
       __proto__: dart.getFields(Pair.__proto__),
@@ -483,13 +478,13 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
   }));
   dart.setLibraryUri(byte_stream.ByteStream, "package:http/src/byte_stream.dart");
   let C2;
-  const BaseResponse_request = dart.privateName(base_response, "BaseResponse.request");
-  const BaseResponse_statusCode = dart.privateName(base_response, "BaseResponse.statusCode");
-  const BaseResponse_reasonPhrase = dart.privateName(base_response, "BaseResponse.reasonPhrase");
-  const BaseResponse_contentLength = dart.privateName(base_response, "BaseResponse.contentLength");
-  const BaseResponse_headers = dart.privateName(base_response, "BaseResponse.headers");
-  const BaseResponse_isRedirect = dart.privateName(base_response, "BaseResponse.isRedirect");
-  const BaseResponse_persistentConnection = dart.privateName(base_response, "BaseResponse.persistentConnection");
+  const request$0 = dart.privateName(base_response, "BaseResponse.request");
+  const statusCode$ = dart.privateName(base_response, "BaseResponse.statusCode");
+  const reasonPhrase$ = dart.privateName(base_response, "BaseResponse.reasonPhrase");
+  const contentLength$ = dart.privateName(base_response, "BaseResponse.contentLength");
+  const headers$ = dart.privateName(base_response, "BaseResponse.headers");
+  const isRedirect$ = dart.privateName(base_response, "BaseResponse.isRedirect");
+  const persistentConnection$ = dart.privateName(base_response, "BaseResponse.persistentConnection");
   base_response.BaseResponse = class BaseResponse extends core.Object {
     get request() {
       return this[request$0];
@@ -555,13 +550,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     }
   }).prototype = base_response.BaseResponse.prototype;
   dart.addTypeTests(base_response.BaseResponse);
-  const request$0 = BaseResponse_request;
-  const statusCode$ = BaseResponse_statusCode;
-  const reasonPhrase$ = BaseResponse_reasonPhrase;
-  const contentLength$ = BaseResponse_contentLength;
-  const headers$ = BaseResponse_headers;
-  const isRedirect$ = BaseResponse_isRedirect;
-  const persistentConnection$ = BaseResponse_persistentConnection;
   dart.setLibraryUri(base_response.BaseResponse, "package:http/src/base_response.dart");
   dart.setFieldSignature(base_response.BaseResponse, () => ({
     __proto__: dart.getFields(base_response.BaseResponse.__proto__),
@@ -573,7 +561,7 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     isRedirect: dart.finalFieldType(core.bool),
     persistentConnection: dart.finalFieldType(core.bool)
   }));
-  const StreamedResponse_stream = dart.privateName(streamed_response, "StreamedResponse.stream");
+  const stream$ = dart.privateName(streamed_response, "StreamedResponse.stream");
   streamed_response.StreamedResponse = class StreamedResponse extends base_response.BaseResponse {
     get stream() {
       return this[stream$];
@@ -594,7 +582,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     ;
   }).prototype = streamed_response.StreamedResponse.prototype;
   dart.addTypeTests(streamed_response.StreamedResponse);
-  const stream$ = StreamedResponse_stream;
   dart.setLibraryUri(streamed_response.StreamedResponse, "package:http/src/streamed_response.dart");
   dart.setFieldSignature(streamed_response.StreamedResponse, () => ({
     __proto__: dart.getFields(streamed_response.StreamedResponse.__proto__),
@@ -609,7 +596,7 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
   }).prototype = client$.Client.prototype;
   dart.addTypeTests(client$.Client);
   dart.setLibraryUri(client$.Client, "package:http/src/client.dart");
-  const Response_bodyBytes = dart.privateName(response$, "Response.bodyBytes");
+  const bodyBytes$ = dart.privateName(response$, "Response.bodyBytes");
   response$.Response = class Response extends base_response.BaseResponse {
     get bodyBytes() {
       return this[bodyBytes$];
@@ -643,7 +630,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     ;
   }).prototype = response$.Response.prototype;
   dart.addTypeTests(response$.Response);
-  const bodyBytes$ = Response_bodyBytes;
   dart.setGetterSignature(response$.Response, () => ({
     __proto__: dart.getGetters(response$.Response.__proto__),
     body: core.String
@@ -751,20 +737,20 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
   base_client.BaseClient[dart.implements] = () => [client$.Client];
   dart.setMethodSignature(base_client.BaseClient, () => ({
     __proto__: dart.getMethods(base_client.BaseClient.__proto__),
-    head: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}),
-    get: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}),
-    post: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}),
-    put: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}),
-    patch: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}),
-    delete: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}),
-    read: dart.fnType(async.Future$(core.String), [dart.dynamic], {headers: core.Map$(core.String, core.String)}),
-    readBytes: dart.fnType(async.Future$(typed_data.Uint8List), [dart.dynamic], {headers: core.Map$(core.String, core.String)}),
+    head: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}, {}),
+    get: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}, {}),
+    post: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}, {}),
+    put: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}, {}),
+    patch: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {body: dart.dynamic, encoding: convert.Encoding, headers: core.Map$(core.String, core.String)}, {}),
+    delete: dart.fnType(async.Future$(response$.Response), [dart.dynamic], {headers: core.Map$(core.String, core.String)}, {}),
+    read: dart.fnType(async.Future$(core.String), [dart.dynamic], {headers: core.Map$(core.String, core.String)}, {}),
+    readBytes: dart.fnType(async.Future$(typed_data.Uint8List), [dart.dynamic], {headers: core.Map$(core.String, core.String)}, {}),
     [_sendUnstreamed]: dart.fnType(async.Future$(response$.Response), [core.String, dart.dynamic, core.Map$(core.String, core.String)], [dart.dynamic, convert.Encoding]),
     [_checkResponseSuccess]: dart.fnType(dart.void, [dart.dynamic, response$.Response]),
     close: dart.fnType(dart.void, [])
   }));
   dart.setLibraryUri(base_client.BaseClient, "package:http/src/base_client.dart");
-  const BrowserClient_withCredentials = dart.privateName(browser_client, "BrowserClient.withCredentials");
+  const withCredentials = dart.privateName(browser_client, "BrowserClient.withCredentials");
   browser_client.BrowserClient = class BrowserClient extends base_client.BaseClient {
     get withCredentials() {
       return this[withCredentials];
@@ -823,11 +809,10 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     ;
   }).prototype = browser_client.BrowserClient.prototype;
   dart.addTypeTests(browser_client.BrowserClient);
-  const withCredentials = BrowserClient_withCredentials;
   dart.setMethodSignature(browser_client.BrowserClient, () => ({
     __proto__: dart.getMethods(browser_client.BrowserClient.__proto__),
     send: dart.fnType(async.Future$(streamed_response.StreamedResponse), [base_request.BaseRequest]),
-    [_openHttpRequest]: dart.fnType(dart.void, [html.HttpRequest, core.String, core.String], {asynch: core.bool, password: core.String, user: core.String})
+    [_openHttpRequest]: dart.fnType(dart.void, [html.HttpRequest, core.String, core.String], {asynch: core.bool, password: core.String, user: core.String}, {})
   }));
   dart.setLibraryUri(browser_client.BrowserClient, "package:http/src/browser_client.dart");
   dart.setFieldSignature(browser_client.BrowserClient, () => ({
@@ -838,8 +823,8 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
   browser_client.createClient = function createClient() {
     return new browser_client.BrowserClient.new();
   };
-  const ClientException_message = dart.privateName(exception, "ClientException.message");
-  const ClientException_uri = dart.privateName(exception, "ClientException.uri");
+  const message$ = dart.privateName(exception, "ClientException.message");
+  const uri$ = dart.privateName(exception, "ClientException.uri");
   exception.ClientException = class ClientException extends core.Object {
     get message() {
       return this[message$];
@@ -864,8 +849,6 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     ;
   }).prototype = exception.ClientException.prototype;
   dart.addTypeTests(exception.ClientException);
-  const message$ = ClientException_message;
-  const uri$ = ClientException_uri;
   exception.ClientException[dart.implements] = () => [core.Exception];
   dart.setLibraryUri(exception.ClientException, "package:http/src/exception.dart");
   dart.setFieldSignature(exception.ClientException, () => ({
@@ -887,7 +870,7 @@ define(['dart_sdk', 'packages/http_parser/http_parser', 'packages/pedantic/pedan
     "package:http/src/exception.dart": exception,
     "package:http/src/base_client.dart": base_client
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["base_request.dart","request.dart","utils.dart","byte_stream.dart","base_response.dart","streamed_response.dart","client.dart","response.dart","base_client.dart","browser_client.dart","exception.dart"],"names":[],"mappings":"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","file":"base_client.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["base_request.dart","request.dart","utils.dart","byte_stream.dart","base_response.dart","streamed_response.dart","client.dart","response.dart","base_client.dart","browser_client.dart","exception.dart"],"names":[],"mappings":"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","file":"base_client.ddc.js"}');
   // Exports:
   return {
     src__request: request$,

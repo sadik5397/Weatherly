@@ -1,7 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5c9a68f-4323-4567-952e-485322a70d04" name="Default Changelist" comment="" />
+    <list default="true" id="c5c9a68f-4323-4567-952e-485322a70d04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/36c9caeb7652f975b33db68395f66d9d/asset_graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/36c9caeb7652f975b33db68395f66d9d/asset_graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/ascii.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/ascii.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/charcode.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/charcode.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/html_entity.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/charcode/lib/html_entity.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/collection.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/algorithms.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/algorithms.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/canonicalized_map.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/comparators.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/iterable_zip.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/iterable_zip.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/priority_queue.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/collection/lib/src/utils.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor_flags.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/actor_flags.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/cubic_ease.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/hold.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/hold.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/interpolator.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/interpolator.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/linear.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/interpolation/linear.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/property_types.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/animation/property_types.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/binary_reader.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/block_types.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/block_types.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/math/aabb.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/math/aabb.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/math/mat2d.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/math/mat2d.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/path_point.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/transform_space.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_dart/lib/transform_space.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/asset_bundle_cache.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/asset_bundle_cache.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/asset_bundle_cache.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/asset_bundle_cache.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/cache.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/cache.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_actor.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_cache.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_cache.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_cache_asset.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_cache_asset.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_controller.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_controller.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_controller.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_controller.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_render_box.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/flare_render_box.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/trim_path.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flare_flutter/lib/trim_path.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/.flutter_web.meta_module.clean" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/.flutter_web.meta_module.clean" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/.flutter_web.meta_module.raw" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/.flutter_web.meta_module.raw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/animation.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/animation.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/cupertino.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/cupertino.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/cupertino.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/cupertino.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/foundation.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/foundation.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/gestures.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/material.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/painting.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/painting.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/physics.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/physics.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/rendering.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/rendering.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/semantics.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/semantics.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/animation/animation.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.flutter_web.module" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/action_sheet.flutter_web.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/interface_level.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/interface_level.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/route.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/route.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/theme.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/cupertino/theme.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/foundation/_bitfield_web.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/arena.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/converter.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/gestures/converter.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/checkbox.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/checkbox.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/debug.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/debug.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/dropdown.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/dropdown.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/flexible_space_bar.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/flexible_space_bar.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/input_decorator.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/input_decorator.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/radio.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/material/radio.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/painting/_network_image_web.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/physics/clamped_simulation.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/animated_size.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/flow.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/flow.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/sliver.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/rendering/sliver.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/semantics/binding.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/services/raw_keyboard.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/services/raw_keyboard.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/services/text_input.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/services/text_input.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/actions.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/app.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/app.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/debug.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/debug.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/focus_traversal.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/focus_traversal.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/icon_theme_data.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/icon_theme_data.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/routes.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/routes.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/scrollable.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/scrollable.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/shortcuts.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/shortcuts.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/sliver.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/src/widgets/sliver.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/widgets.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/flutter/lib/widgets.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/http.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http/lib/src/base_client.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/http_parser/lib/http_parser.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/meta/lib/meta.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/path/lib/path.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/pedantic/lib/pedantic.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/pedantic/lib/pedantic.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/source_span/lib/source_span.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/string_scanner/lib/src/eager_span_scanner.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/term_glyph/lib/src/generated/ascii_glyph_set.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/term_glyph/lib/src/generated/ascii_glyph_set.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/typed_data/lib/typed_buffers.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/typed_data/lib/typed_buffers.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/typed_data/lib/typed_data.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/typed_data/lib/typed_data.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/hash.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/hash.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/vector_math/lib/vector_math_64.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/.flutter_web.meta_module.clean" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/.flutter_web.meta_module.clean" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/.flutter_web.meta_module.raw" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/.flutter_web.meta_module.raw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.flutter_web.module" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.flutter_web.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/appBar.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/component/textStyle.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.flutter_web.module" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.flutter_web.module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.module.library" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main.module.library" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main_web_entrypoint.dart.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main_web_entrypoint.dart.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main_web_entrypoint.digests" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/main_web_entrypoint.digests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/City.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/build/flutter_web/weatherly/lib/model/Weather.ddc.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/7ed511af7417893808ff62415b2fb9a0/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/7ed511af7417893808ff62415b2fb9a0/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.dart_tool/flutter_build/7ed511af7417893808ff62415b2fb9a0/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/../.dart_tool/flutter_build/7ed511af7417893808ff62415b2fb9a0/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/libs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/flutter/debug/libs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/intermediates/merged_assets/debug/out/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/outputs/apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/outputs/apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/outputs/apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/outputs/apk/app.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/flutter_assets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../build/flutter_assets/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/flutter_assets/kernel_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build/flutter_assets/vm_snapshot_data" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,8 +205,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
   <component name="ExternalProjectsData">
@@ -26,7 +221,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/launch_background.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,17 +235,27 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/launch_background.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
       </list>
     </option>
   </component>
@@ -60,42 +265,34 @@
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-30T18:11:58.548Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="E:/SDK/android" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hishabkhata" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -191,47 +388,47 @@
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.23027718" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.2912088" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Preview" />
-      <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23027718" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32967034" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="right" id="Flutter Outline" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Preview" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/launch_background.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>

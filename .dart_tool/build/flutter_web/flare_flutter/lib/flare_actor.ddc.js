@@ -54,19 +54,19 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   const Alignment_y = dart.privateName(alignment, "Alignment.y");
   const Alignment_x = dart.privateName(alignment, "Alignment.x");
   let C1;
-  const FlareActor_filename = dart.privateName(flare_actor, "FlareActor.filename");
-  const FlareActor_artboard = dart.privateName(flare_actor, "FlareActor.artboard");
-  const FlareActor_animation = dart.privateName(flare_actor, "FlareActor.animation");
-  const FlareActor_snapToEnd = dart.privateName(flare_actor, "FlareActor.snapToEnd");
-  const FlareActor_fit = dart.privateName(flare_actor, "FlareActor.fit");
-  const FlareActor_alignment = dart.privateName(flare_actor, "FlareActor.alignment");
-  const FlareActor_isPaused = dart.privateName(flare_actor, "FlareActor.isPaused");
-  const FlareActor_shouldClip = dart.privateName(flare_actor, "FlareActor.shouldClip");
-  const FlareActor_controller = dart.privateName(flare_actor, "FlareActor.controller");
-  const FlareActor_callback = dart.privateName(flare_actor, "FlareActor.callback");
-  const FlareActor_color = dart.privateName(flare_actor, "FlareActor.color");
-  const FlareActor_boundsNode = dart.privateName(flare_actor, "FlareActor.boundsNode");
-  const FlareActor_sizeFromArtboard = dart.privateName(flare_actor, "FlareActor.sizeFromArtboard");
+  const filename$ = dart.privateName(flare_actor, "FlareActor.filename");
+  const artboard$ = dart.privateName(flare_actor, "FlareActor.artboard");
+  const animation$ = dart.privateName(flare_actor, "FlareActor.animation");
+  const snapToEnd$ = dart.privateName(flare_actor, "FlareActor.snapToEnd");
+  const fit$ = dart.privateName(flare_actor, "FlareActor.fit");
+  const alignment$ = dart.privateName(flare_actor, "FlareActor.alignment");
+  const isPaused$ = dart.privateName(flare_actor, "FlareActor.isPaused");
+  const shouldClip$ = dart.privateName(flare_actor, "FlareActor.shouldClip");
+  const controller$ = dart.privateName(flare_actor, "FlareActor.controller");
+  const callback$ = dart.privateName(flare_actor, "FlareActor.callback");
+  const color$ = dart.privateName(flare_actor, "FlareActor.color");
+  const boundsNode$ = dart.privateName(flare_actor, "FlareActor.boundsNode");
+  const sizeFromArtboard$ = dart.privateName(flare_actor, "FlareActor.sizeFromArtboard");
   flare_actor.FlareActor = class FlareActor extends framework.LeafRenderObjectWidget {
     get filename() {
       return this[filename$];
@@ -219,19 +219,6 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
     ;
   }).prototype = flare_actor.FlareActor.prototype;
   dart.addTypeTests(flare_actor.FlareActor);
-  const filename$ = FlareActor_filename;
-  const artboard$ = FlareActor_artboard;
-  const animation$ = FlareActor_animation;
-  const snapToEnd$ = FlareActor_snapToEnd;
-  const fit$ = FlareActor_fit;
-  const alignment$ = FlareActor_alignment;
-  const isPaused$ = FlareActor_isPaused;
-  const shouldClip$ = FlareActor_shouldClip;
-  const controller$ = FlareActor_controller;
-  const callback$ = FlareActor_callback;
-  const color$ = FlareActor_color;
-  const boundsNode$ = FlareActor_boundsNode;
-  const sizeFromArtboard$ = FlareActor_sizeFromArtboard;
   dart.setMethodSignature(flare_actor.FlareActor, () => ({
     __proto__: dart.getMethods(flare_actor.FlareActor.__proto__),
     createRenderObject: dart.fnType(object.RenderObject, [framework.BuildContext])
@@ -253,11 +240,11 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
     boundsNode: dart.finalFieldType(core.String),
     sizeFromArtboard: dart.finalFieldType(core.bool)
   }));
-  const FlareAnimationLayer_name = dart.privateName(flare_actor, "FlareAnimationLayer.name");
-  const FlareAnimationLayer_animation = dart.privateName(flare_actor, "FlareAnimationLayer.animation");
-  const FlareAnimationLayer_time = dart.privateName(flare_actor, "FlareAnimationLayer.time");
-  const FlareAnimationLayer_mix = dart.privateName(flare_actor, "FlareAnimationLayer.mix");
-  const FlareAnimationLayer_mixSeconds = dart.privateName(flare_actor, "FlareAnimationLayer.mixSeconds");
+  const name = dart.privateName(flare_actor, "FlareAnimationLayer.name");
+  const animation = dart.privateName(flare_actor, "FlareAnimationLayer.animation");
+  const time = dart.privateName(flare_actor, "FlareAnimationLayer.time");
+  const mix = dart.privateName(flare_actor, "FlareAnimationLayer.mix");
+  const mixSeconds = dart.privateName(flare_actor, "FlareAnimationLayer.mixSeconds");
   flare_actor.FlareAnimationLayer = class FlareAnimationLayer extends core.Object {
     get name() {
       return this[name];
@@ -308,11 +295,6 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
     ;
   }).prototype = flare_actor.FlareAnimationLayer.prototype;
   dart.addTypeTests(flare_actor.FlareAnimationLayer);
-  const name = FlareAnimationLayer_name;
-  const animation = FlareAnimationLayer_animation;
-  const time = FlareAnimationLayer_time;
-  const mix = FlareAnimationLayer_mix;
-  const mixSeconds = FlareAnimationLayer_mixSeconds;
   dart.setMethodSignature(flare_actor.FlareAnimationLayer, () => ({
     __proto__: dart.getMethods(flare_actor.FlareAnimationLayer.__proto__),
     apply: dart.fnType(dart.void, [flare.FlutterActorArtboard])
@@ -346,8 +328,8 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   const _color = dart.privateName(flare_actor, "_color");
   const _instanceArtboard = dart.privateName(flare_actor, "_instanceArtboard");
   const _updateAnimation = dart.privateName(flare_actor, "_updateAnimation");
-  const FlareActorRenderObject_snapToEnd = dart.privateName(flare_actor, "FlareActorRenderObject.snapToEnd");
-  const FlareActorRenderObject_shouldClip = dart.privateName(flare_actor, "FlareActorRenderObject.shouldClip");
+  const snapToEnd = dart.privateName(flare_actor, "FlareActorRenderObject.snapToEnd");
+  const shouldClip = dart.privateName(flare_actor, "FlareActorRenderObject.shouldClip");
   flare_actor.FlareActorRenderObject = class FlareActorRenderObject extends flare_render_box.FlareRenderBox {
     get snapToEnd() {
       return this[snapToEnd];
@@ -621,8 +603,6 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
     ;
   }).prototype = flare_actor.FlareActorRenderObject.prototype;
   dart.addTypeTests(flare_actor.FlareActorRenderObject);
-  const snapToEnd = FlareActorRenderObject_snapToEnd;
-  const shouldClip = FlareActorRenderObject_shouldClip;
   dart.setMethodSignature(flare_actor.FlareActorRenderObject, () => ({
     __proto__: dart.getMethods(flare_actor.FlareActorRenderObject.__proto__),
     updateBounds: dart.fnType(dart.void, []),
@@ -630,7 +610,7 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
     [_instanceArtboard]: dart.fnType(core.bool, []),
     advance: dart.fnType(dart.void, [core.double]),
     paintFlare: dart.fnType(dart.void, [ui.Canvas, mat2d.Mat2D]),
-    [_updateAnimation]: dart.fnType(dart.void, [], {onlyWhenMissing: core.bool})
+    [_updateAnimation]: dart.fnType(dart.void, [], {onlyWhenMissing: core.bool}, {})
   }));
   dart.setGetterSignature(flare_actor.FlareActorRenderObject, () => ({
     __proto__: dart.getGetters(flare_actor.FlareActorRenderObject.__proto__),
@@ -678,7 +658,7 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   dart.trackLibraries("packages/flare_flutter/flare_actor", {
     "package:flare_flutter/flare_actor.dart": flare_actor
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["flare_actor.dart"],"names":[],"mappings":"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","file":"flare_actor.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["flare_actor.dart"],"names":[],"mappings":"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","file":"flare_actor.ddc.js"}');
   // Exports:
   return {
     flare_actor: flare_actor

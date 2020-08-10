@@ -14,18 +14,18 @@ define(['dart_sdk'], function(dart_sdk) {
   let WeatherElementToMapOfString$dynamic = () => (WeatherElementToMapOfString$dynamic = dart.constFn(dart.fnType(MapOfString$dynamic(), [Weather.WeatherElement])))();
   let IdentityMapOfString$dynamic = () => (IdentityMapOfString$dynamic = dart.constFn(_js_helper.IdentityMap$(core.String, dart.dynamic)))();
   const CT = Object.create(null);
-  const Weather_coord = dart.privateName(Weather, "Weather.coord");
-  const Weather_weather = dart.privateName(Weather, "Weather.weather");
-  const Weather_base = dart.privateName(Weather, "Weather.base");
-  const Weather_main = dart.privateName(Weather, "Weather.main");
-  const Weather_wind = dart.privateName(Weather, "Weather.wind");
-  const Weather_clouds = dart.privateName(Weather, "Weather.clouds");
-  const Weather_dt = dart.privateName(Weather, "Weather.dt");
-  const Weather_sys = dart.privateName(Weather, "Weather.sys");
-  const Weather_timezone = dart.privateName(Weather, "Weather.timezone");
-  const Weather_id = dart.privateName(Weather, "Weather.id");
-  const Weather_name = dart.privateName(Weather, "Weather.name");
-  const Weather_cod = dart.privateName(Weather, "Weather.cod");
+  const coord$ = dart.privateName(Weather, "Weather.coord");
+  const weather$ = dart.privateName(Weather, "Weather.weather");
+  const base$ = dart.privateName(Weather, "Weather.base");
+  const main$ = dart.privateName(Weather, "Weather.main");
+  const wind$ = dart.privateName(Weather, "Weather.wind");
+  const clouds$ = dart.privateName(Weather, "Weather.clouds");
+  const dt$ = dart.privateName(Weather, "Weather.dt");
+  const sys$ = dart.privateName(Weather, "Weather.sys");
+  const timezone$ = dart.privateName(Weather, "Weather.timezone");
+  const id$ = dart.privateName(Weather, "Weather.id");
+  const name$ = dart.privateName(Weather, "Weather.name");
+  const cod$ = dart.privateName(Weather, "Weather.cod");
   Weather.Weather = class Weather$ extends core.Object {
     get coord() {
       return this[coord$];
@@ -134,18 +134,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Weather.prototype;
   dart.addTypeTests(Weather.Weather);
-  const coord$ = Weather_coord;
-  const weather$ = Weather_weather;
-  const base$ = Weather_base;
-  const main$ = Weather_main;
-  const wind$ = Weather_wind;
-  const clouds$ = Weather_clouds;
-  const dt$ = Weather_dt;
-  const sys$ = Weather_sys;
-  const timezone$ = Weather_timezone;
-  const id$ = Weather_id;
-  const name$ = Weather_name;
-  const cod$ = Weather_cod;
   dart.setMethodSignature(Weather.Weather, () => ({
     __proto__: dart.getMethods(Weather.Weather.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -166,7 +154,7 @@ define(['dart_sdk'], function(dart_sdk) {
     name: dart.fieldType(core.String),
     cod: dart.fieldType(core.int)
   }));
-  const Clouds_all = dart.privateName(Weather, "Clouds.all");
+  const all$ = dart.privateName(Weather, "Clouds.all");
   Weather.Clouds = class Clouds extends core.Object {
     get all() {
       return this[all$];
@@ -187,7 +175,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Clouds.prototype;
   dart.addTypeTests(Weather.Clouds);
-  const all$ = Clouds_all;
   dart.setMethodSignature(Weather.Clouds, () => ({
     __proto__: dart.getMethods(Weather.Clouds.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -197,8 +184,8 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getFields(Weather.Clouds.__proto__),
     all: dart.fieldType(core.int)
   }));
-  const Coord_lon = dart.privateName(Weather, "Coord.lon");
-  const Coord_lat = dart.privateName(Weather, "Coord.lat");
+  const lon$ = dart.privateName(Weather, "Coord.lon");
+  const lat$ = dart.privateName(Weather, "Coord.lat");
   Weather.Coord = class Coord extends core.Object {
     get lon() {
       return this[lon$];
@@ -227,8 +214,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Coord.prototype;
   dart.addTypeTests(Weather.Coord);
-  const lon$ = Coord_lon;
-  const lat$ = Coord_lat;
   dart.setMethodSignature(Weather.Coord, () => ({
     __proto__: dart.getMethods(Weather.Coord.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -239,13 +224,13 @@ define(['dart_sdk'], function(dart_sdk) {
     lon: dart.fieldType(core.double),
     lat: dart.fieldType(core.double)
   }));
-  const Main_temp = dart.privateName(Weather, "Main.temp");
-  const Main_pressure = dart.privateName(Weather, "Main.pressure");
-  const Main_humidity = dart.privateName(Weather, "Main.humidity");
-  const Main_tempMin = dart.privateName(Weather, "Main.tempMin");
-  const Main_tempMax = dart.privateName(Weather, "Main.tempMax");
-  const Main_seaLevel = dart.privateName(Weather, "Main.seaLevel");
-  const Main_grndLevel = dart.privateName(Weather, "Main.grndLevel");
+  const temp$ = dart.privateName(Weather, "Main.temp");
+  const pressure$ = dart.privateName(Weather, "Main.pressure");
+  const humidity$ = dart.privateName(Weather, "Main.humidity");
+  const tempMin$ = dart.privateName(Weather, "Main.tempMin");
+  const tempMax$ = dart.privateName(Weather, "Main.tempMax");
+  const seaLevel$ = dart.privateName(Weather, "Main.seaLevel");
+  const grndLevel$ = dart.privateName(Weather, "Main.grndLevel");
   Weather.Main = class Main extends core.Object {
     get temp() {
       return this[temp$];
@@ -314,13 +299,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Main.prototype;
   dart.addTypeTests(Weather.Main);
-  const temp$ = Main_temp;
-  const pressure$ = Main_pressure;
-  const humidity$ = Main_humidity;
-  const tempMin$ = Main_tempMin;
-  const tempMax$ = Main_tempMax;
-  const seaLevel$ = Main_seaLevel;
-  const grndLevel$ = Main_grndLevel;
   dart.setMethodSignature(Weather.Main, () => ({
     __proto__: dart.getMethods(Weather.Main.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -336,9 +314,9 @@ define(['dart_sdk'], function(dart_sdk) {
     seaLevel: dart.fieldType(core.int),
     grndLevel: dart.fieldType(core.int)
   }));
-  const Sys_country = dart.privateName(Weather, "Sys.country");
-  const Sys_sunrise = dart.privateName(Weather, "Sys.sunrise");
-  const Sys_sunset = dart.privateName(Weather, "Sys.sunset");
+  const country$ = dart.privateName(Weather, "Sys.country");
+  const sunrise$ = dart.privateName(Weather, "Sys.sunrise");
+  const sunset$ = dart.privateName(Weather, "Sys.sunset");
   Weather.Sys = class Sys extends core.Object {
     get country() {
       return this[country$];
@@ -375,9 +353,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Sys.prototype;
   dart.addTypeTests(Weather.Sys);
-  const country$ = Sys_country;
-  const sunrise$ = Sys_sunrise;
-  const sunset$ = Sys_sunset;
   dart.setMethodSignature(Weather.Sys, () => ({
     __proto__: dart.getMethods(Weather.Sys.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -389,10 +364,10 @@ define(['dart_sdk'], function(dart_sdk) {
     sunrise: dart.fieldType(core.int),
     sunset: dart.fieldType(core.int)
   }));
-  const WeatherElement_id = dart.privateName(Weather, "WeatherElement.id");
-  const WeatherElement_main = dart.privateName(Weather, "WeatherElement.main");
-  const WeatherElement_description = dart.privateName(Weather, "WeatherElement.description");
-  const WeatherElement_icon = dart.privateName(Weather, "WeatherElement.icon");
+  const id$0 = dart.privateName(Weather, "WeatherElement.id");
+  const main$0 = dart.privateName(Weather, "WeatherElement.main");
+  const description$ = dart.privateName(Weather, "WeatherElement.description");
+  const icon$ = dart.privateName(Weather, "WeatherElement.icon");
   Weather.WeatherElement = class WeatherElement extends core.Object {
     get id() {
       return this[id$0];
@@ -437,10 +412,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.WeatherElement.prototype;
   dart.addTypeTests(Weather.WeatherElement);
-  const id$0 = WeatherElement_id;
-  const main$0 = WeatherElement_main;
-  const description$ = WeatherElement_description;
-  const icon$ = WeatherElement_icon;
   dart.setMethodSignature(Weather.WeatherElement, () => ({
     __proto__: dart.getMethods(Weather.WeatherElement.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -453,8 +424,8 @@ define(['dart_sdk'], function(dart_sdk) {
     description: dart.fieldType(core.String),
     icon: dart.fieldType(core.String)
   }));
-  const Wind_speed = dart.privateName(Weather, "Wind.speed");
-  const Wind_deg = dart.privateName(Weather, "Wind.deg");
+  const speed$ = dart.privateName(Weather, "Wind.speed");
+  const deg$ = dart.privateName(Weather, "Wind.deg");
   Weather.Wind = class Wind extends core.Object {
     get speed() {
       return this[speed$];
@@ -483,8 +454,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = Weather.Wind.prototype;
   dart.addTypeTests(Weather.Wind);
-  const speed$ = Wind_speed;
-  const deg$ = Wind_deg;
   dart.setMethodSignature(Weather.Wind, () => ({
     __proto__: dart.getMethods(Weather.Wind.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -504,7 +473,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/weatherly/model/Weather", {
     "package:weatherly/model/Weather.dart": Weather
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["Weather.dart"],"names":[],"mappings":"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","file":"Weather.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["Weather.dart"],"names":[],"mappings":"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","file":"Weather.ddc.js"}');
   // Exports:
   return {
     model__Weather: Weather

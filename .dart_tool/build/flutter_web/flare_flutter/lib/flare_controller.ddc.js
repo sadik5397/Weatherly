@@ -7,7 +7,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web'], function(d
   const flare_controller = Object.create(dart.library);
   let ValueNotifierOfbool = () => (ValueNotifierOfbool = dart.constFn(change_notifier.ValueNotifier$(core.bool)))();
   const CT = Object.create(null);
-  const FlareController_isActive = dart.privateName(flare_controller, "FlareController.isActive");
+  const isActive = dart.privateName(flare_controller, "FlareController.isActive");
   flare_controller.FlareController = class FlareController extends core.Object {
     get isActive() {
       return this[isActive];
@@ -21,7 +21,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web'], function(d
     ;
   }).prototype = flare_controller.FlareController.prototype;
   dart.addTypeTests(flare_controller.FlareController);
-  const isActive = FlareController_isActive;
   dart.setLibraryUri(flare_controller.FlareController, "package:flare_flutter/flare_controller.dart");
   dart.setFieldSignature(flare_controller.FlareController, () => ({
     __proto__: dart.getFields(flare_controller.FlareController.__proto__),

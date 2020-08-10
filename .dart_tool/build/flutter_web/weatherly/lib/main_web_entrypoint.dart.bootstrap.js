@@ -123,7 +123,8 @@ let modulePaths = {
  "packages/weatherly/main": "packages/weatherly/main.ddc",
  "packages/weatherly/main_web_entrypoint": "packages/weatherly/main_web_entrypoint.ddc",
  "packages/weatherly/model/City": "packages/weatherly/model/City.ddc",
- "packages/weatherly/model/Weather": "packages/weatherly/model/Weather.ddc"
+ "packages/weatherly/model/Weather": "packages/weatherly/model/Weather.ddc",
+ "packages/weatherly/page/changeCity": "packages/weatherly/page/changeCity.ddc"
 };
 if(!window.$dartLoader) {
    window.$dartLoader = {

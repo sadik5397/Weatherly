@@ -1,12 +1,12 @@
 define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/collection/src/priority_queue', 'packages/flutter/src/gestures/arena'], function(dart_sdk, packages__flutter__src__foundation___bitfield_web, packages__collection__src__priority_queue, packages__flutter__src__gestures__arena) {
   'use strict';
   const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
   const async = dart_sdk.async;
   const developer = dart_sdk.developer;
+  const ui = dart_sdk.ui;
   const _js_helper = dart_sdk._js_helper;
   const collection = dart_sdk.collection;
-  const _interceptors = dart_sdk._interceptors;
-  const ui = dart_sdk.ui;
   const typed_data = dart_sdk.typed_data;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
@@ -37,14 +37,16 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const $split = dartx.split;
   const $forEach = dartx.forEach;
   const $toString = dartx.toString;
-  const $compareTo = dartx.compareTo;
+  const $add = dartx.add;
   const $length = dartx.length;
-  const $_set = dartx._set;
+  const $contains = dartx.contains;
   const $remove = dartx.remove;
+  const $isEmpty = dartx.isEmpty;
+  const $compareTo = dartx.compareTo;
+  const $_set = dartx._set;
   const $keys = dartx.keys;
   const $_get = dartx._get;
   const $join = dartx.join;
-  const $add = dartx.add;
   const $round = dartx.round;
   const $padRight = dartx.padRight;
   const $padLeft = dartx.padLeft;
@@ -55,23 +57,31 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const $lengthInBytes = dartx.lengthInBytes;
   const $map = dartx.map;
   const $toList = dartx.toList;
-  const $isEmpty = dartx.isEmpty;
   const $isNotEmpty = dartx.isNotEmpty;
   const $reversed = dartx.reversed;
   let VoidTobool = () => (VoidTobool = dart.constFn(dart.fnType(core.bool, [])))();
+  let JSArrayOfDiagnosticsNode = () => (JSArrayOfDiagnosticsNode = dart.constFn(_interceptors.JSArray$(diagnostics.DiagnosticsNode)))();
+  let DiagnosticsPropertyOfTicker = () => (DiagnosticsPropertyOfTicker = dart.constFn(diagnostics.DiagnosticsProperty$(ticker$.Ticker)))();
   let CompleterOfvoid = () => (CompleterOfvoid = dart.constFn(async.Completer$(dart.void)))();
   let dynamicTovoid = () => (dynamicTovoid = dart.constFn(dart.fnType(dart.void, [dart.dynamic])))();
   let VoidTodynamic = () => (VoidTodynamic = dart.constFn(dart.fnType(dart.dynamic, [])))();
   let VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
-  let __Tobool = () => (__Tobool = dart.constFn(dart.fnType(core.bool, [], {priority: core.int, scheduler: binding$0.SchedulerBinding})))();
+  let ListOfFrameTiming = () => (ListOfFrameTiming = dart.constFn(core.List$(ui.FrameTiming)))();
+  let ListOfFrameTimingTovoid = () => (ListOfFrameTimingTovoid = dart.constFn(dart.fnType(dart.void, [ListOfFrameTiming()])))();
+  let JSArrayOfListOfFrameTimingTovoid = () => (JSArrayOfListOfFrameTimingTovoid = dart.constFn(_interceptors.JSArray$(ListOfFrameTimingTovoid())))();
+  let __Tobool = () => (__Tobool = dart.constFn(dart.fnType(core.bool, [], {priority: core.int, scheduler: binding$0.SchedulerBinding}, {})))();
   let HeapPriorityQueueOf_TaskEntry = () => (HeapPriorityQueueOf_TaskEntry = dart.constFn(priority_queue.HeapPriorityQueue$(binding$0._TaskEntry)))();
   let _TaskEntryAnd_TaskEntryToint = () => (_TaskEntryAnd_TaskEntryToint = dart.constFn(dart.fnType(core.int, [binding$0._TaskEntry, binding$0._TaskEntry])))();
   let IdentityMapOfint$_FrameCallbackEntry = () => (IdentityMapOfint$_FrameCallbackEntry = dart.constFn(_js_helper.IdentityMap$(core.int, binding$0._FrameCallbackEntry)))();
   let _IdentityHashSetOfint = () => (_IdentityHashSetOfint = dart.constFn(collection._IdentityHashSet$(core.int)))();
   let DurationTovoid = () => (DurationTovoid = dart.constFn(dart.fnType(dart.void, [core.Duration])))();
   let JSArrayOfDurationTovoid = () => (JSArrayOfDurationTovoid = dart.constFn(_interceptors.JSArray$(DurationTovoid())))();
-  let ListOfFrameTiming = () => (ListOfFrameTiming = dart.constFn(core.List$(ui.FrameTiming)))();
   let ListOfFrameTimingToNull = () => (ListOfFrameTimingToNull = dart.constFn(dart.fnType(core.Null, [ListOfFrameTiming()])))();
+  let ListOfListOfFrameTimingTovoid = () => (ListOfListOfFrameTimingTovoid = dart.constFn(core.List$(ListOfFrameTimingTovoid())))();
+  let DiagnosticsPropertyOfListOfFrameTimingTovoid = () => (DiagnosticsPropertyOfListOfFrameTimingTovoid = dart.constFn(diagnostics.DiagnosticsProperty$(ListOfFrameTimingTovoid())))();
+  let SyncIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = () => (SyncIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = dart.constFn(_js_helper.SyncIterable$(DiagnosticsPropertyOfListOfFrameTimingTovoid())))();
+  let IterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = () => (IterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = dart.constFn(core.Iterable$(DiagnosticsPropertyOfListOfFrameTimingTovoid())))();
+  let VoidToIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = () => (VoidToIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid = dart.constFn(dart.fnType(IterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid(), [])))();
   let FutureOfdouble = () => (FutureOfdouble = dart.constFn(async.Future$(core.double)))();
   let VoidToFutureOfdouble = () => (VoidToFutureOfdouble = dart.constFn(dart.fnType(FutureOfdouble(), [])))();
   let FutureOfNull = () => (FutureOfNull = dart.constFn(async.Future$(core.Null)))();
@@ -178,58 +188,51 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     },
     get C12() {
       return C12 = dart.const({
-        __proto__: ui.AppLifecycleState.prototype,
-        [_name]: "AppLifecycleState.suspending",
-        index: 3
-      });
-    },
-    get C13() {
-      return C13 = dart.const({
         __proto__: platform_views._AndroidViewState.prototype,
         [_name$0]: "_AndroidViewState.waitingForSize",
         index: 0
       });
     },
-    get C14() {
-      return C14 = dart.const({
+    get C13() {
+      return C13 = dart.const({
         __proto__: platform_views._AndroidViewState.prototype,
         [_name$0]: "_AndroidViewState.creating",
         index: 1
       });
     },
-    get C15() {
-      return C15 = dart.const({
+    get C14() {
+      return C14 = dart.const({
         __proto__: platform_views._AndroidViewState.prototype,
         [_name$0]: "_AndroidViewState.created",
         index: 2
       });
     },
-    get C16() {
-      return C16 = dart.const({
+    get C15() {
+      return C15 = dart.const({
         __proto__: platform_views._AndroidViewState.prototype,
         [_name$0]: "_AndroidViewState.createFailed",
         index: 3
       });
     },
-    get C17() {
-      return C17 = dart.const({
+    get C16() {
+      return C16 = dart.const({
         __proto__: platform_views._AndroidViewState.prototype,
         [_name$0]: "_AndroidViewState.disposed",
         index: 4
       });
     },
-    get C18() {
-      return C18 = dart.constList([C13 || CT.C13, C14 || CT.C14, C15 || CT.C15, C16 || CT.C16, C17 || CT.C17], platform_views._AndroidViewState);
+    get C17() {
+      return C17 = dart.constList([C12 || CT.C12, C13 || CT.C13, C14 || CT.C14, C15 || CT.C15, C16 || CT.C16], platform_views._AndroidViewState);
     },
-    get C19() {
-      return C19 = dart.const({
+    get C18() {
+      return C18 = dart.const({
         __proto__: ui.TextDirection.prototype,
         [_name]: "TextDirection.ltr",
         index: 1
       });
     },
-    get C20() {
-      return C20 = dart.const({
+    get C19() {
+      return C19 = dart.const({
         __proto__: ui.TextDirection.prototype,
         [_name]: "TextDirection.rtl",
         index: 0
@@ -251,7 +254,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const _cancel = dart.privateName(ticker$, "_cancel");
   const _complete = dart.privateName(ticker$, "_complete");
   const _tick = dart.privateName(ticker$, "_tick");
-  const Ticker_debugLabel = dart.privateName(ticker$, "Ticker.debugLabel");
+  const debugLabel$ = dart.privateName(ticker$, "Ticker.debugLabel");
   ticker$.Ticker = class Ticker extends core.Object {
     get debugLabel() {
       return this[debugLabel$];
@@ -284,11 +287,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     start() {
       if (!dart.test(dart.fn(() => {
         if (dart.test(this.isActive)) {
-          dart.throw(assertions.FlutterError.new("A ticker was started twice.\n" + "A ticker that is already active cannot be started again without first stopping it.\n" + "The affected ticker was: " + dart.str(this.toString({debugIncludeStack: true}))));
+          dart.throw(new assertions.FlutterError.fromParts(JSArrayOfDiagnosticsNode().of([new assertions.ErrorSummary.new("A ticker was started twice."), new assertions.ErrorDescription.new("A ticker that is already active cannot be started again without first stopping it."), this.describeForError("The affected ticker was")])));
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 146, 12, "() {\r\n      if (isActive) {\r\n        throw FlutterError(\r\n          'A ticker was started twice.\\n'\r\n          'A ticker that is already active cannot be started again without first stopping it.\\n'\r\n          'The affected ticker was: ${ toString(debugIncludeStack: true) }'\r\n        );\r\n      }\r\n      return true;\r\n    }()");
-      if (!(this[_startTime] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 156, 12, "_startTime == null");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 148, 12, "() {\r\n      if (isActive) {\r\n        throw FlutterError.fromParts(<DiagnosticsNode>[\r\n          ErrorSummary('A ticker was started twice.'),\r\n          ErrorDescription('A ticker that is already active cannot be started again without first stopping it.'),\r\n          describeForError('The affected ticker was'),\r\n        ]);\r\n      }\r\n      return true;\r\n    }()");
+      if (!(this[_startTime] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 158, 12, "_startTime == null");
       this[_future] = new ticker$.TickerFuture.__();
       if (dart.test(this.shouldScheduleTick)) {
         this.scheduleTick();
@@ -296,13 +299,16 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (dart.notNull(binding$0.SchedulerBinding.instance.schedulerPhase.index) > dart.notNull(binding$0.SchedulerPhase.idle.index) && dart.notNull(binding$0.SchedulerBinding.instance.schedulerPhase.index) < dart.notNull(binding$0.SchedulerPhase.postFrameCallbacks.index)) this[_startTime] = binding$0.SchedulerBinding.instance.currentFrameTimeStamp;
       return this[_future];
     }
+    describeForError(name) {
+      return new (DiagnosticsPropertyOfTicker()).new(name, this, {description: this.toString({debugIncludeStack: true})});
+    }
     stop(opts) {
       let canceled = opts && 'canceled' in opts ? opts.canceled : false;
       if (!dart.test(this.isActive)) return;
       let localFuture = this[_future];
       this[_future] = null;
       this[_startTime] = null;
-      if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 191, 12, "!isActive");
+      if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 200, 12, "!isActive");
       this.unscheduleTick();
       if (dart.test(canceled)) {
         localFuture[_cancel](this);
@@ -317,8 +323,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return !dart.test(this.muted) && dart.test(this.isActive) && !dart.test(this.scheduled);
     }
     [_tick](timeStamp) {
-      if (!dart.test(this.isTicking)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 223, 12, "isTicking");
-      if (!dart.test(this.scheduled)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 224, 12, "scheduled");
+      if (!dart.test(this.isTicking)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 232, 12, "isTicking");
+      if (!dart.test(this.scheduled)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 233, 12, "scheduled");
       this[_animationId] = null;
       this[_startTime] == null ? this[_startTime] = timeStamp : null;
       this[_onTick$](timeStamp['-'](this[_startTime]));
@@ -326,8 +332,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     }
     scheduleTick(opts) {
       let rescheduling = opts && 'rescheduling' in opts ? opts.rescheduling : false;
-      if (!!dart.test(this.scheduled)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 241, 12, "!scheduled");
-      if (!dart.test(this.shouldScheduleTick)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 242, 12, "shouldScheduleTick");
+      if (!!dart.test(this.scheduled)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 250, 12, "!scheduled");
+      if (!dart.test(this.shouldScheduleTick)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 251, 12, "shouldScheduleTick");
       this[_animationId] = binding$0.SchedulerBinding.instance.scheduleFrameCallback(dart.bind(this, _tick), {rescheduling: rescheduling});
     }
     unscheduleTick() {
@@ -335,14 +341,14 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
         binding$0.SchedulerBinding.instance.cancelFrameCallbackWithId(this[_animationId]);
         this[_animationId] = null;
       }
-      if (!!dart.test(this.shouldScheduleTick)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 258, 12, "!shouldScheduleTick");
+      if (!!dart.test(this.shouldScheduleTick)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 267, 12, "!shouldScheduleTick");
     }
     absorbTicker(originalTicker) {
-      if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 271, 12, "!isActive");
-      if (!(this[_future] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 272, 12, "_future == null");
-      if (!(this[_startTime] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 273, 12, "_startTime == null");
-      if (!(this[_animationId] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 274, 12, "_animationId == null");
-      if (!(originalTicker[_future] == null)[$_equals](originalTicker[_startTime] == null)) dart.assertFailed("Cannot absorb Ticker after it has been disposed.", "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 275, 12, "(originalTicker._future == null) == (originalTicker._startTime == null)");
+      if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 280, 12, "!isActive");
+      if (!(this[_future] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 281, 12, "_future == null");
+      if (!(this[_startTime] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 282, 12, "_startTime == null");
+      if (!(this[_animationId] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 283, 12, "_animationId == null");
+      if (!(originalTicker[_future] == null)[$_equals](originalTicker[_startTime] == null)) dart.assertFailed("Cannot absorb Ticker after it has been disposed.", "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 284, 12, "(originalTicker._future == null) == (originalTicker._startTime == null)");
       if (originalTicker[_future] != null) {
         this[_future] = originalTicker[_future];
         this[_startTime] = originalTicker[_startTime];
@@ -356,14 +362,14 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (this[_future] != null) {
         let localFuture = this[_future];
         this[_future] = null;
-        if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 294, 14, "!isActive");
+        if (!!dart.test(this.isActive)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 303, 14, "!isActive");
         this.unscheduleTick();
         localFuture[_cancel](this);
       }
       if (!dart.test(dart.fn(() => {
         this[_startTime] = core.Duration.zero;
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 298, 12, "() {\r\n      // We intentionally don't null out _startTime. This means that if start()\r\n      // was ever called, the object is now in a bogus state. This weakly helps\r\n      // catch cases of use-after-dispose.\r\n      _startTime = Duration.zero;\r\n      return true;\r\n    }()");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 307, 12, "() {\r\n      // We intentionally don't null out _startTime. This means that if start()\r\n      // was ever called, the object is now in a bogus state. This weakly helps\r\n      // catch cases of use-after-dispose.\r\n      _startTime = Duration.zero;\r\n      return true;\r\n    }()");
     }
     toString(opts) {
       let debugIncludeStack = opts && 'debugIncludeStack' in opts ? opts.debugIncludeStack : false;
@@ -373,7 +379,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
         let t0;
         buffer.write((t0 = this.debugLabel, t0 == null ? "" : t0));
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 317, 12, "() {\r\n      buffer.write(debugLabel ?? '');\r\n      return true;\r\n    }()");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 326, 12, "() {\r\n      buffer.write(debugLabel ?? '');\r\n      return true;\r\n    }()");
       buffer.write(")");
       if (!dart.test(dart.fn(() => {
         if (dart.test(debugIncludeStack)) {
@@ -382,7 +388,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           assertions.FlutterError.defaultStackFilter(dart.toString(this[_debugCreationStack])[$trimRight]()[$split]("\n"))[$forEach](dart.bind(buffer, 'writeln'));
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 322, 12, "() {\r\n      if (debugIncludeStack) {\r\n        buffer.writeln();\r\n        buffer.writeln('The stack trace when the $runtimeType was actually created was:');\r\n        FlutterError.defaultStackFilter(_debugCreationStack.toString().trimRight().split('\\n')).forEach(buffer.writeln);\r\n      }\r\n      return true;\r\n    }()");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 331, 12, "() {\r\n      if (debugIncludeStack) {\r\n        buffer.writeln();\r\n        buffer.writeln('The stack trace when the $runtimeType was actually created was:');\r\n        FlutterError.defaultStackFilter(_debugCreationStack.toString().trimRight().split('\\n')).forEach(buffer.writeln);\r\n      }\r\n      return true;\r\n    }()");
       return buffer.toString();
     }
   };
@@ -398,21 +404,21 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     if (!dart.test(dart.fn(() => {
       this[_debugCreationStack] = core.StackTrace.current;
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 63, 12, "() {\r\n      _debugCreationStack = StackTrace.current;\r\n      return true;\r\n    }()");
+    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 65, 12, "() {\r\n      _debugCreationStack = StackTrace.current;\r\n      return true;\r\n    }()");
   }).prototype = ticker$.Ticker.prototype;
   dart.addTypeTests(ticker$.Ticker);
-  const debugLabel$ = Ticker_debugLabel;
   dart.setMethodSignature(ticker$.Ticker, () => ({
     __proto__: dart.getMethods(ticker$.Ticker.__proto__),
     start: dart.fnType(ticker$.TickerFuture, []),
-    stop: dart.fnType(dart.void, [], {canceled: core.bool}),
+    describeForError: dart.fnType(diagnostics.DiagnosticsNode, [core.String]),
+    stop: dart.fnType(dart.void, [], {canceled: core.bool}, {}),
     [_tick]: dart.fnType(dart.void, [core.Duration]),
-    scheduleTick: dart.fnType(dart.void, [], {rescheduling: core.bool}),
+    scheduleTick: dart.fnType(dart.void, [], {rescheduling: core.bool}, {}),
     unscheduleTick: dart.fnType(dart.void, []),
     absorbTicker: dart.fnType(dart.void, [ticker$.Ticker]),
     dispose: dart.fnType(dart.void, []),
-    toString: dart.fnType(core.String, [], {debugIncludeStack: core.bool}),
-    [$toString]: dart.fnType(core.String, [], {debugIncludeStack: core.bool})
+    toString: dart.fnType(core.String, [], {debugIncludeStack: core.bool}, {}),
+    [$toString]: dart.fnType(core.String, [], {debugIncludeStack: core.bool}, {})
   }));
   dart.setGetterSignature(ticker$.Ticker, () => ({
     __proto__: dart.getGetters(ticker$.Ticker.__proto__),
@@ -446,7 +452,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   ticker$.TickerFuture = class TickerFuture extends core.Object {
     [_complete]() {
       let t0;
-      if (!(this[_completed] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 369, 12, "_completed == null");
+      if (!(this[_completed] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 378, 12, "_completed == null");
       this[_completed] = true;
       this[_primaryCompleter].complete(null);
       t0 = this[_secondaryCompleter];
@@ -454,7 +460,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     }
     [_cancel](ticker) {
       let t0;
-      if (!(this[_completed] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 376, 12, "_completed == null");
+      if (!(this[_completed] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/ticker.dart", 385, 12, "_completed == null");
       this[_completed] = false;
       t0 = this[_secondaryCompleter];
       t0 == null ? null : t0.completeError(new ticker$.TickerCanceled.new(ticker));
@@ -523,9 +529,9 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     [_cancel]: dart.fnType(dart.void, [ticker$.Ticker]),
     whenCompleteOrCancel: dart.fnType(dart.void, [dart.fnType(dart.void, [])]),
     asStream: dart.fnType(async.Stream$(dart.void), []),
-    catchError: dart.fnType(async.Future$(dart.void), [core.Function], {test: dart.fnType(core.bool, [dart.dynamic])}),
-    then: dart.gFnType(E => [async.Future$(E), [dart.fnType(dart.dynamic, [dart.void])], {onError: core.Function}]),
-    timeout: dart.fnType(async.Future$(dart.void), [core.Duration], {onTimeout: core.Object}),
+    catchError: dart.fnType(async.Future$(dart.void), [core.Function], {test: dart.fnType(core.bool, [dart.dynamic])}, {}),
+    then: dart.gFnType(E => [async.Future$(E), [dart.fnType(dart.dynamic, [dart.void])], {onError: core.Function}, {}]),
+    timeout: dart.fnType(async.Future$(dart.void), [core.Duration], {onTimeout: core.Object}, {}),
     whenComplete: dart.fnType(async.Future$(dart.void), [dart.fnType(dart.dynamic, [])])
   }));
   dart.setGetterSignature(ticker$.TickerFuture, () => ({
@@ -567,7 +573,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   }));
   dart.defineExtensionMethods(ticker$.TickerCanceled, ['toString']);
   const _is__TaskEntry_default = Symbol('_is__TaskEntry_default');
-  const _TaskEntry_completer = dart.privateName(binding$0, "_TaskEntry.completer");
+  const completer = dart.privateName(binding$0, "_TaskEntry.completer");
   binding$0._TaskEntry$ = dart.generic(T => {
     let CompleterOfT = () => (CompleterOfT = dart.constFn(async.Completer$(T)))();
     class _TaskEntry extends core.Object {
@@ -603,7 +609,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     }).prototype = _TaskEntry.prototype;
     dart.addTypeTests(_TaskEntry);
     _TaskEntry.prototype[_is__TaskEntry_default] = true;
-    const completer = _TaskEntry_completer;
     dart.setMethodSignature(_TaskEntry, () => ({
       __proto__: dart.getMethods(_TaskEntry.__proto__),
       run: dart.fnType(dart.void, [])
@@ -631,16 +636,16 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (dart.test(rescheduling)) {
         if (!dart.test(dart.fn(() => {
           if (binding$0._FrameCallbackEntry.debugCurrentCallbackStack == null) {
-            dart.throw(assertions.FlutterError.new("scheduleFrameCallback called with rescheduling true, but no callback is in scope.\n" + "The \"rescheduling\" argument should only be set to true if the " + "callback is being reregistered from within the callback itself, " + "and only then if the callback itself is entirely synchronous. " + "If this is the initial registration of the callback, or if the " + "callback is asynchronous, then do not use the \"rescheduling\" " + "argument."));
+            dart.throw(new assertions.FlutterError.fromParts(JSArrayOfDiagnosticsNode().of([new assertions.ErrorSummary.new("scheduleFrameCallback called with rescheduling true, but no callback is in scope."), new assertions.ErrorDescription.new("The \"rescheduling\" argument should only be set to true if the " + "callback is being reregistered from within the callback itself, " + "and only then if the callback itself is entirely synchronous."), new assertions.ErrorHint.new("If this is the initial registration of the callback, or if the " + "callback is asynchronous, then do not use the \"rescheduling\" " + "argument.")])));
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 95, 16, "() {\r\n          if (debugCurrentCallbackStack == null) {\r\n            throw FlutterError(\r\n              'scheduleFrameCallback called with rescheduling true, but no callback is in scope.\\n'\r\n              'The \"rescheduling\" argument should only be set to true if the '\r\n              'callback is being reregistered from within the callback itself, '\r\n              'and only then if the callback itself is entirely synchronous. '\r\n              'If this is the initial registration of the callback, or if the '\r\n              'callback is asynchronous, then do not use the \"rescheduling\" '\r\n              'argument.'\r\n            );\r\n          }\r\n          return true;\r\n        }()");
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 95, 16, "() {\r\n          if (debugCurrentCallbackStack == null) {\r\n            throw FlutterError.fromParts(<DiagnosticsNode>[\r\n              ErrorSummary('scheduleFrameCallback called with rescheduling true, but no callback is in scope.'),\r\n              ErrorDescription(\r\n                'The \"rescheduling\" argument should only be set to true if the '\r\n                'callback is being reregistered from within the callback itself, '\r\n                'and only then if the callback itself is entirely synchronous.'\r\n              ),\r\n              ErrorHint(\r\n                'If this is the initial registration of the callback, or if the '\r\n                'callback is asynchronous, then do not use the \"rescheduling\" '\r\n                'argument.'\r\n              )\r\n            ]);\r\n          }\r\n          return true;\r\n        }()");
         this.debugStack = binding$0._FrameCallbackEntry.debugCurrentCallbackStack;
       } else {
         this.debugStack = core.StackTrace.current;
       }
       return true;
-    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 93, 12, "() {\r\n      if (rescheduling) {\r\n        assert(() {\r\n          if (debugCurrentCallbackStack == null) {\r\n            throw FlutterError(\r\n              'scheduleFrameCallback called with rescheduling true, but no callback is in scope.\\n'\r\n              'The \"rescheduling\" argument should only be set to true if the '\r\n              'callback is being reregistered from within the callback itself, '\r\n              'and only then if the callback itself is entirely synchronous. '\r\n              'If this is the initial registration of the callback, or if the '\r\n              'callback is asynchronous, then do not use the \"rescheduling\" '\r\n              'argument.'\r\n            );\r\n          }\r\n          return true;\r\n        }());\r\n        debugStack = debugCurrentCallbackStack;\r\n      } else {\r\n        // TODO(ianh): trim the frames from this library, so that the call to scheduleFrameCallback is the top one\r\n        debugStack = StackTrace.current;\r\n      }\r\n      return true;\r\n    }()");
+    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 93, 12, "() {\r\n      if (rescheduling) {\r\n        assert(() {\r\n          if (debugCurrentCallbackStack == null) {\r\n            throw FlutterError.fromParts(<DiagnosticsNode>[\r\n              ErrorSummary('scheduleFrameCallback called with rescheduling true, but no callback is in scope.'),\r\n              ErrorDescription(\r\n                'The \"rescheduling\" argument should only be set to true if the '\r\n                'callback is being reregistered from within the callback itself, '\r\n                'and only then if the callback itself is entirely synchronous.'\r\n              ),\r\n              ErrorHint(\r\n                'If this is the initial registration of the callback, or if the '\r\n                'callback is asynchronous, then do not use the \"rescheduling\" '\r\n                'argument.'\r\n              )\r\n            ]);\r\n          }\r\n          return true;\r\n        }());\r\n        debugStack = debugCurrentCallbackStack;\r\n      } else {\r\n        // TODO(ianh): trim the frames from this library, so that the call to scheduleFrameCallback is the top one\r\n        debugStack = StackTrace.current;\r\n      }\r\n      return true;\r\n    }()");
   }).prototype = binding$0._FrameCallbackEntry.prototype;
   dart.addTypeTests(binding$0._FrameCallbackEntry);
   dart.setLibraryUri(binding$0._FrameCallbackEntry, "package:flutter/src/scheduler/binding.dart");
@@ -686,6 +691,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   binding$0.SchedulerPhase.persistentCallbacks = C4 || CT.C4;
   binding$0.SchedulerPhase.postFrameCallbacks = C5 || CT.C5;
   binding$0.SchedulerPhase.values = C6 || CT.C6;
+  const _timingsCallbacks = dart.privateName(binding$0, "_timingsCallbacks");
   const _lifecycleState = dart.privateName(binding$0, "_lifecycleState");
   let C7;
   const _taskQueue = dart.privateName(binding$0, "_taskQueue");
@@ -710,19 +716,19 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const _ignoreNextEngineDrawFrame = dart.privateName(binding$0, "_ignoreNextEngineDrawFrame");
   const _handleLifecycleMessage = dart.privateName(binding$0, "_handleLifecycleMessage");
   const _profileFramePostEvent = dart.privateName(binding$0, "_profileFramePostEvent");
+  const _executeTimingsCallbacks = dart.privateName(binding$0, "_executeTimingsCallbacks");
   const _setFramesEnabledState = dart.privateName(binding$0, "_setFramesEnabledState");
   const _name = dart.privateName(ui, "_name");
   let C9;
   let C10;
   let C11;
-  let C12;
   const _ensureEventLoopCallback = dart.privateName(binding$0, "_ensureEventLoopCallback");
   const _runTasks = dart.privateName(binding$0, "_runTasks");
   const _handleBeginFrame = dart.privateName(binding$0, "_handleBeginFrame");
   const _handleDrawFrame = dart.privateName(binding$0, "_handleDrawFrame");
   const _adjustForEpoch = dart.privateName(binding$0, "_adjustForEpoch");
   const _invokeFrameCallback = dart.privateName(binding$0, "_invokeFrameCallback");
-  const SchedulerBinding_schedulingStrategy = dart.privateName(binding$0, "SchedulerBinding.schedulingStrategy");
+  const schedulingStrategy = dart.privateName(binding$0, "SchedulerBinding.schedulingStrategy");
   binding$0.SchedulerBinding = class SchedulerBinding extends core.Object {
     static get instance() {
       return binding$0.SchedulerBinding._instance;
@@ -741,10 +747,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
         {
           return ui.AppLifecycleState.inactive;
         }
-        case "AppLifecycleState.suspending":
-        {
-          return ui.AppLifecycleState.suspending;
-        }
       }
       return null;
     }
@@ -760,7 +762,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           print.debugPrint("No transient callback is currently executing.");
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 552, 12, " assert(() {\r\n      if (_FrameCallbackEntry.debugCurrentCallbackStack != null) {\r\n        debugPrint('When the current transient callback was registered, this was the stack:');\r\n        debugPrint(\r\n          FlutterError.defaultStackFilter(\r\n            _FrameCallbackEntry.debugCurrentCallbackStack.toString().trimRight().split('\\n')\r\n          ).join('\\n')\r\n        );\r\n      } else {\r\n        debugPrint('No transient callback is currently executing.');\r\n      }\r\n      return true;\r");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 611, 12, "() {\r\n      if (_FrameCallbackEntry.debugCurrentCallbackStack != null) {\r\n        debugPrint('When the current transient callback was registered, this was the stack:');\r\n        debugPrint(\r\n          FlutterError.defaultStackFilter(\r\n            _FrameCallbackEntry.debugCurrentCallbackStack.toString().trimRight().split('\\n')\r\n          ).join('\\n')\r\n        );\r\n      } else {\r\n        debugPrint('No transient callback is currently executing.');\r\n      }\r\n      return true;\r\n    }()");
     }
     static _debugDescribeTimeStamp(timeStamp, buffer) {
       if (dart.notNull(timeStamp.inDays) > 0) buffer.write(dart.str(timeStamp.inDays) + "d ");
@@ -787,12 +789,43 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       this.readInitialLifecycleStateFromNativeWindow();
       if (!false) {
         let frameNumber = 0;
-        this.window.onReportTimings = dart.fn(timings => {
+        this.addTimingsCallback(dart.fn(timings => {
           for (let frameTiming of timings) {
             frameNumber = frameNumber + 1;
             this[_profileFramePostEvent](frameNumber, frameTiming);
           }
-        }, ListOfFrameTimingToNull());
+        }, ListOfFrameTimingToNull()));
+      }
+    }
+    addTimingsCallback(callback) {
+      this[_timingsCallbacks][$add](callback);
+      if (this[_timingsCallbacks][$length] === 1) {
+        if (!(this.window.onReportTimings == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 229, 14, "window.onReportTimings == null");
+        this.window.onReportTimings = dart.bind(this, _executeTimingsCallbacks);
+      }
+      if (!dart.equals(this.window.onReportTimings, dart.bind(this, _executeTimingsCallbacks))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 232, 12, "window.onReportTimings == _executeTimingsCallbacks");
+    }
+    removeTimingsCallback(callback) {
+      if (!dart.test(this[_timingsCallbacks][$contains](callback))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 237, 12, "_timingsCallbacks.contains(callback)");
+      this[_timingsCallbacks][$remove](callback);
+      if (dart.test(this[_timingsCallbacks][$isEmpty])) {
+        this.window.onReportTimings = null;
+      }
+    }
+    [_executeTimingsCallbacks](timings) {
+      let clonedCallbacks = ListOfListOfFrameTimingTovoid().from(this[_timingsCallbacks]);
+      for (let callback of clonedCallbacks) {
+        try {
+          if (dart.test(this[_timingsCallbacks][$contains](callback))) {
+            callback(timings);
+          }
+        } catch (e) {
+          let exception = dart.getThrown(e);
+          let stack = dart.stackTrace(e);
+          assertions.FlutterError.reportError(new assertions.FlutterErrorDetails.new({exception: exception, stack: stack, context: new assertions.ErrorDescription.new("while executing callbacks for FrameTiming"), informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid()).new(function*() {
+              yield new (DiagnosticsPropertyOfListOfFrameTimingTovoid()).new("The TimingsCallback that gets executed was", callback, {style: diagnostics.DiagnosticsTreeStyle.errorProperty});
+            }), VoidToIterableOfDiagnosticsPropertyOfListOfFrameTimingTovoid())}));
+        }
       }
     }
     initServiceExtensions() {
@@ -814,7 +847,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       }
     }
     handleAppLifecycleStateChanged(state) {
-      if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 270, 12, "state != null");
+      if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 325, 12, "state != null");
       this[_lifecycleState] = state;
       switch (state) {
         case C9 || CT.C9:
@@ -824,15 +857,19 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           break;
         }
         case C11 || CT.C11:
-        case C12 || CT.C12:
         {
           this[_setFramesEnabledState](false);
+          break;
+        }
+        default:
+        {
           break;
         }
       }
     }
     [_handleLifecycleMessage](message) {
       return async.async(core.String, (function* _handleLifecycleMessage() {
+        if (message === "AppLifecycleState.detached") return null;
         this.handleAppLifecycleStateChanged(binding$0.SchedulerBinding._parseAppLifecycleMessage(message));
         return null;
       }).bind(this));
@@ -851,8 +888,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (dart.test(this[_taskQueue].isNotEmpty)) this[_ensureEventLoopCallback]();
     }
     [_ensureEventLoopCallback]() {
-      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 363, 12, "!locked");
-      if (!dart.test(this[_taskQueue].isNotEmpty)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 364, 12, "_taskQueue.isNotEmpty");
+      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 422, 12, "!locked");
+      if (!dart.test(this[_taskQueue].isNotEmpty)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 423, 12, "_taskQueue.isNotEmpty");
       if (dart.test(this[_hasRequestedAnEventLoopCallback])) return;
       this[_hasRequestedAnEventLoopCallback] = true;
       async.Timer.run(dart.bind(this, _runTasks));
@@ -875,7 +912,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           if (!dart.test(dart.fn(() => {
             callbackStack = entry.debugStack;
             return true;
-          }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 399, 16, "() {\r\n          callbackStack = entry.debugStack;\r\n          return true;\r\n        }()");
+          }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 458, 16, "() {\r\n          callbackStack = entry.debugStack;\r\n          return true;\r\n        }()");
           assertions.FlutterError.reportError(new assertions.FlutterErrorDetails.new({exception: exception, stack: exceptionStack, library: "scheduler library", context: new assertions.ErrorDescription.new("during a task callback"), informationCollector: callbackStack == null ? null : dart.fn(() => new (SyncIterableOfDiagnosticsStackTrace()).new(function*() {
               yield new assertions.DiagnosticsStackTrace.new("\nThis exception was thrown in the context of a scheduler callback. " + "When the scheduler callback was _registered_ (as opposed to when the " + "exception was thrown), this was the stack", callbackStack);
             }), VoidToIterableOfDiagnosticsStackTrace())}));
@@ -895,7 +932,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return this[_nextFrameCallbackId];
     }
     cancelFrameCallbackWithId(id) {
-      if (!(dart.notNull(id) > 0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 471, 12, "id > 0");
+      if (!(dart.notNull(id) > 0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 530, 12, "id > 0");
       this[_transientCallbacks][$remove](id);
       this[_removedIds].add(id);
     }
@@ -917,7 +954,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
             }), VoidToIterableOfDiagnosticsNode())}));
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 497, 12, "() {\r\n      if (transientCallbackCount > 0) {\r\n        // We cache the values so that we can produce them later\r\n        // even if the information collector is called after\r\n        // the problem has been resolved.\r\n        final int count = transientCallbackCount;\r\n        final Map<int, _FrameCallbackEntry> callbacks = Map<int, _FrameCallbackEntry>.from(_transientCallbacks);\r\n        FlutterError.reportError(FlutterErrorDetails(\r\n          exception: reason,\r\n          library: 'scheduler library',\r\n          informationCollector: () sync* {\r\n            if (count == 1) {\r\n              // TODO(jacobr): I have added an extra line break in this case.\r\n              yield ErrorDescription(\r\n                'There was one transient callback left. '\r\n                'The stack trace for when it was registered is as follows:'\r\n              );\r\n            } else {\r\n              yield ErrorDescription(\r\n                'There were $count transient callbacks left. '\r\n                'The stack traces for when they were registered are as follows:'\r\n              );\r\n            }\r\n            for (int id in callbacks.keys) {\r\n              final _FrameCallbackEntry entry = callbacks[id];\r\n              yield DiagnosticsStackTrace('── callback $id ──', entry.debugStack, showSeparator: false);\r\n            }\r\n          },\r\n        ));\r\n      }\r\n      return true;\r");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 556, 12, "() {\r\n      if (transientCallbackCount > 0) {\r\n        // We cache the values so that we can produce them later\r\n        // even if the information collector is called after\r\n        // the problem has been resolved.\r\n        final int count = transientCallbackCount;\r\n        final Map<int, _FrameCallbackEntry> callbacks = Map<int, _FrameCallbackEntry>.from(_transientCallbacks);\r\n        FlutterError.reportError(FlutterErrorDetails(\r\n          exception: reason,\r\n          library: 'scheduler library',\r\n          informationCollector: () sync* {\r\n            if (count == 1) {\r\n              // TODO(jacobr): I have added an extra line break in this case.\r\n              yield ErrorDescription(\r\n                'There was one transient callback left. '\r\n                'The stack trace for when it was registered is as follows:'\r\n              );\r\n            } else {\r\n              yield ErrorDescription(\r\n                'There were $count transient callbacks left. '\r\n                'The stack traces for when they were registered are as follows:'\r\n              );\r\n            }\r\n            for (int id in callbacks.keys) {\r\n              final _FrameCallbackEntry entry = callbacks[id];\r\n              yield DiagnosticsStackTrace('── callback $id ──', entry.debugStack, showSeparator: false);\r\n            }\r\n          },\r\n        ));\r\n      }\r\n      return true;\r\n    }()");
       return true;
     }
     addPersistentFrameCallback(callback) {
@@ -952,11 +989,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (dart.test(enabled)) this.scheduleFrame();
     }
     ensureFrameCallbacksRegistered() {
-      let t1, t1$;
-      t1 = this.window;
-      t1.onBeginFrame == null ? t1.onBeginFrame = dart.bind(this, _handleBeginFrame) : null;
-      t1$ = this.window;
-      t1$.onDrawFrame == null ? t1$.onDrawFrame = dart.bind(this, _handleDrawFrame) : null;
+      let t2, t2$;
+      t2 = this.window;
+      t2.onBeginFrame == null ? t2.onBeginFrame = dart.bind(this, _handleBeginFrame) : null;
+      t2$ = this.window;
+      t2$.onDrawFrame == null ? t2$.onDrawFrame = dart.bind(this, _handleDrawFrame) : null;
     }
     ensureVisualUpdate() {
       switch (this.schedulerPhase) {
@@ -979,7 +1016,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (!dart.test(dart.fn(() => {
         if (dart.test(debug$.debugPrintScheduleFrameStacks)) assertions.debugPrintStack({label: "scheduleFrame() called. Current phase is " + dart.str(this.schedulerPhase) + "."});
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 719, 12, " assert(() {\r\n      if (debugPrintScheduleFrameStacks)\r\n        debugPrintStack(label: 'scheduleFrame() called. Current phase is $schedulerPhase.');\r\n      return true;\r");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 778, 12, "() {\r\n      if (debugPrintScheduleFrameStacks)\r\n        debugPrintStack(label: 'scheduleFrame() called. Current phase is $schedulerPhase.');\r\n      return true;\r\n    }()");
       this.ensureFrameCallbacksRegistered();
       this.window.scheduleFrame();
       this[_hasScheduledFrame] = true;
@@ -989,7 +1026,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (!dart.test(dart.fn(() => {
         if (dart.test(debug$.debugPrintScheduleFrameStacks)) assertions.debugPrintStack({label: "scheduleForcedFrame() called. Current phase is " + dart.str(this.schedulerPhase) + "."});
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 751, 12, " assert(() {\r\n      if (debugPrintScheduleFrameStacks)\r\n        debugPrintStack(label: 'scheduleForcedFrame() called. Current phase is $schedulerPhase.');\r\n      return true;\r");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 810, 12, "() {\r\n      if (debugPrintScheduleFrameStacks)\r\n        debugPrintStack(label: 'scheduleForcedFrame() called. Current phase is $schedulerPhase.');\r\n      return true;\r\n    }()");
       this.window.scheduleFrame();
       this[_hasScheduledFrame] = true;
     }
@@ -999,11 +1036,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       developer.Timeline.startSync("Warm-up frame");
       let hadScheduledFrame = this[_hasScheduledFrame];
       async.Timer.run(dart.fn(() => {
-        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 786, 14, " assert(_war");
+        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 845, 14, "_warmUpFrame");
         this.handleBeginFrame(null);
       }, VoidToNull()));
       async.Timer.run(dart.fn(() => {
-        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 790, 14, " assert(_war");
+        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 849, 14, "_warmUpFrame");
         this.handleDrawFrame();
         this.resetEpoch();
         this[_warmUpFrame] = false;
@@ -1023,16 +1060,16 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return new core.Duration.new({microseconds: (dart.notNull(rawDurationSinceEpoch.inMicroseconds) / dart.notNull(binding$0.timeDilation))[$round]() + dart.notNull(this[_epochStart].inMicroseconds)});
     }
     get currentFrameTimeStamp() {
-      if (!(this[_currentFrameTimeStamp] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 859, 12, " assert(_currentFrameTimeStamp");
+      if (!(this[_currentFrameTimeStamp] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 918, 12, "_currentFrameTimeStamp != null");
       return this[_currentFrameTimeStamp];
     }
     get currentSystemFrameTimeStamp() {
-      if (!(this[_lastRawTimeStamp] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 876, 12, " assert(_lastRawTimeStamp");
+      if (!(this[_lastRawTimeStamp] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 935, 12, "_lastRawTimeStamp != null");
       return this[_lastRawTimeStamp];
     }
     [_handleBeginFrame](rawTimeStamp) {
       if (dart.test(this[_warmUpFrame])) {
-        if (!!dart.test(this[_ignoreNextEngineDrawFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 886, 14, " assert(!_ignoreNextEngineD");
+        if (!!dart.test(this[_ignoreNextEngineDrawFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 945, 14, "!_ignoreNextEngineDrawFrame");
         this[_ignoreNextEngineDrawFrame] = true;
         return;
       }
@@ -1046,10 +1083,10 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       this.handleDrawFrame();
     }
     handleBeginFrame(rawTimeStamp) {
-      let t1;
+      let t2;
       developer.Timeline.startSync("Frame", {arguments: debug.timelineWhitelistArguments});
       this[_firstRawTimeStampInEpoch] == null ? this[_firstRawTimeStampInEpoch] = rawTimeStamp : null;
-      this[_currentFrameTimeStamp] = this[_adjustForEpoch]((t1 = rawTimeStamp, t1 == null ? this[_lastRawTimeStamp] : t1));
+      this[_currentFrameTimeStamp] = this[_adjustForEpoch]((t2 = rawTimeStamp, t2 == null ? this[_lastRawTimeStamp] : t2));
       if (rawTimeStamp != null) this[_lastRawTimeStamp] = rawTimeStamp;
       if (!dart.test(dart.fn(() => {
         this[_debugFrameNumber] = dart.notNull(this[_debugFrameNumber]) + 1;
@@ -1064,8 +1101,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           if (dart.test(debug$.debugPrintBeginFrameBanner)) print.debugPrint(this[_debugBanner]);
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 931, 12, " assert(() {\r\n      _debugFrameNumber += 1;\r\n\r\n      if (debugPrintBeginFrameBanner || debugPrintEndFrameBanner) {\r\n        final StringBuffer frameTimeStampDescription = StringBuffer();\r\n        if (rawTimeStamp != null) {\r\n          _debugDescribeTimeStamp(_currentFrameTimeStamp, frameTimeStampDescription);\r\n        } else {\r\n          frameTimeStampDescription.write('(warm-up frame)');\r\n        }\r\n        _debugBanner = '▄▄▄▄▄▄▄▄ Frame ${_debugFrameNumber.toString().padRight(7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';\r\n        if (debugPrintBeginFrameBanner)\r\n          debugPrint(_debugBanner");
-      if (!dart.equals(this.schedulerPhase, binding$0.SchedulerPhase.idle)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 948, 12, "  return true;\r\n    }());\r\n\r\n    asse");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 990, 12, "() {\r\n      _debugFrameNumber += 1;\r\n\r\n      if (debugPrintBeginFrameBanner || debugPrintEndFrameBanner) {\r\n        final StringBuffer frameTimeStampDescription = StringBuffer();\r\n        if (rawTimeStamp != null) {\r\n          _debugDescribeTimeStamp(_currentFrameTimeStamp, frameTimeStampDescription);\r\n        } else {\r\n          frameTimeStampDescription.write('(warm-up frame)');\r\n        }\r\n        _debugBanner = '▄▄▄▄▄▄▄▄ Frame ${_debugFrameNumber.toString().padRight(7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';\r\n        if (debugPrintBeginFrameBanner)\r\n          debugPrint(_debugBanner);\r\n      }\r\n      return true;\r\n    }()");
+      if (!dart.equals(this.schedulerPhase, binding$0.SchedulerPhase.idle)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1007, 12, "schedulerPhase == SchedulerPhase.idle");
       this[_hasScheduledFrame] = false;
       try {
         developer.Timeline.startSync("Animate", {arguments: debug.timelineWhitelistArguments});
@@ -1081,7 +1118,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       }
     }
     handleDrawFrame() {
-      if (!dart.equals(this[_schedulerPhase], binding$0.SchedulerPhase.midFrameMicrotasks)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 976, 12, "\n  void handleDrawFrame() {\r\n    assert(_schedulerPh");
+      if (!dart.equals(this[_schedulerPhase], binding$0.SchedulerPhase.midFrameMicrotasks)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1035, 12, "_schedulerPhase == SchedulerPhase.midFrameMicrotasks");
       developer.Timeline.finishSync();
       try {
         this[_schedulerPhase] = binding$0.SchedulerPhase.persistentCallbacks;
@@ -1099,7 +1136,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
           if (dart.test(debug$.debugPrintEndFrameBanner)) print.debugPrint("▀"[$times](this[_debugBanner].length));
           this[_debugBanner] = null;
           return true;
-        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 994, 14, "hSync(); // end the Frame\r\n      assert(() {\r\n        if (debugPrintEndFrameBanner)\r\n          debugPrint('▀' * _debugBanner.length);\r\n        _debugBanne");
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1053, 14, "() {\r\n        if (debugPrintEndFrameBanner)\r\n          debugPrint('▀' * _debugBanner.length);\r\n        _debugBanner = null;\r\n        return true;\r\n      }()");
         this[_currentFrameTimeStamp] = null;
       }
     }
@@ -1108,12 +1145,12 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     }
     [_invokeFrameCallback](callback, timeStamp, callbackStack) {
       if (callbackStack === void 0) callbackStack = null;
-      if (!(callback != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1036, 12, "StackTrace callb");
-      if (!(binding$0._FrameCallbackEntry.debugCurrentCallbackStack == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1037, 12, "    assert(callback != null);\r\n    assert(_FrameCallb");
+      if (!(callback != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1095, 12, "callback != null");
+      if (!(binding$0._FrameCallbackEntry.debugCurrentCallbackStack == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1096, 12, "_FrameCallbackEntry.debugCurrentCallbackStack == null");
       if (!dart.test(dart.fn(() => {
         binding$0._FrameCallbackEntry.debugCurrentCallbackStack = callbackStack;
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1038, 12, "urrentCallbackStack == null);\r\n    assert(() {\r\n      _FrameCallbackEntry.debugCurrentCallbackStack = c");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1097, 12, "() {\r\n      _FrameCallbackEntry.debugCurrentCallbackStack = callbackStack;\r\n      return true;\r\n    }()");
       try {
         callback(timeStamp);
       } catch (e) {
@@ -1126,10 +1163,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (!dart.test(dart.fn(() => {
         binding$0._FrameCallbackEntry.debugCurrentCallbackStack = null;
         return true;
-      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1060, 12, "\n        },\r\n      ));\r\n    }\r\n    assert(() {\r\n      _FrameCallbackEntry.debugCurrentCallback");
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 1119, 12, "() {\r\n      _FrameCallbackEntry.debugCurrentCallbackStack = null;\r\n      return true;\r\n    }()");
     }
   };
   (binding$0.SchedulerBinding[dart.mixinNew] = function() {
+    this[_timingsCallbacks] = JSArrayOfListOfFrameTimingTovoid().of([]);
     this[_lifecycleState] = null;
     this[schedulingStrategy] = C7 || CT.C7;
     this[_taskQueue] = new (HeapPriorityQueueOf_TaskEntry()).new(C8 || CT.C8);
@@ -1153,21 +1191,23 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     this[_ignoreNextEngineDrawFrame] = false;
   }).prototype = binding$0.SchedulerBinding.prototype;
   dart.addTypeTests(binding$0.SchedulerBinding);
-  const schedulingStrategy = SchedulerBinding_schedulingStrategy;
   binding$0.SchedulerBinding[dart.implements] = () => [binding$.ServicesBinding, binding.BindingBase];
   dart.setMethodSignature(binding$0.SchedulerBinding, () => ({
     __proto__: dart.getMethods(binding$0.SchedulerBinding.__proto__),
     initInstances: dart.fnType(dart.void, []),
+    addTimingsCallback: dart.fnType(dart.void, [dart.fnType(dart.void, [core.List$(ui.FrameTiming)])]),
+    removeTimingsCallback: dart.fnType(dart.void, [dart.fnType(dart.void, [core.List$(ui.FrameTiming)])]),
+    [_executeTimingsCallbacks]: dart.fnType(dart.void, [core.List$(ui.FrameTiming)]),
     initServiceExtensions: dart.fnType(dart.void, []),
     readInitialLifecycleStateFromNativeWindow: dart.fnType(dart.void, []),
     handleAppLifecycleStateChanged: dart.fnType(dart.void, [ui.AppLifecycleState]),
     [_handleLifecycleMessage]: dart.fnType(async.Future$(core.String), [core.String]),
-    scheduleTask: dart.gFnType(T => [async.Future$(T), [dart.fnType(T, []), priority$.Priority], {debugLabel: core.String, flow: developer.Flow}]),
+    scheduleTask: dart.gFnType(T => [async.Future$(T), [dart.fnType(T, []), priority$.Priority], {debugLabel: core.String, flow: developer.Flow}, {}]),
     unlocked: dart.fnType(dart.void, []),
     [_ensureEventLoopCallback]: dart.fnType(dart.void, []),
     [_runTasks]: dart.fnType(dart.void, []),
     handleEventLoopCallback: dart.fnType(core.bool, []),
-    scheduleFrameCallback: dart.fnType(core.int, [dart.fnType(dart.void, [core.Duration])], {rescheduling: core.bool}),
+    scheduleFrameCallback: dart.fnType(core.int, [dart.fnType(dart.void, [core.Duration])], {rescheduling: core.bool}, {}),
     cancelFrameCallbackWithId: dart.fnType(dart.void, [core.int]),
     debugAssertNoTransientCallbacks: dart.fnType(core.bool, [core.String]),
     addPersistentFrameCallback: dart.fnType(dart.void, [dart.fnType(dart.void, [core.Duration])]),
@@ -1201,8 +1241,9 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   dart.setLibraryUri(binding$0.SchedulerBinding, "package:flutter/src/scheduler/binding.dart");
   dart.setFieldSignature(binding$0.SchedulerBinding, () => ({
     __proto__: dart.getFields(binding$0.SchedulerBinding.__proto__),
+    [_timingsCallbacks]: dart.finalFieldType(core.List$(dart.fnType(dart.void, [core.List$(ui.FrameTiming)]))),
     [_lifecycleState]: dart.fieldType(ui.AppLifecycleState),
-    schedulingStrategy: dart.fieldType(dart.fnType(core.bool, [], {priority: core.int, scheduler: binding$0.SchedulerBinding})),
+    schedulingStrategy: dart.fieldType(dart.fnType(core.bool, [], {priority: core.int, scheduler: binding$0.SchedulerBinding}, {})),
     [_taskQueue]: dart.finalFieldType(priority_queue.PriorityQueue$(binding$0._TaskEntry)),
     [_hasRequestedAnEventLoopCallback]: dart.fieldType(core.bool),
     [_nextFrameCallbackId]: dart.fieldType(core.int),
@@ -1240,11 +1281,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return binding$0._timeDilation;
     },
     set timeDilation(value) {
-      let t2;
+      let t3;
       if (!(dart.notNull(value) > 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/scheduler/binding.dart", 26, 10, "value > 0.0");
       if (binding$0._timeDilation == value) return;
-      t2 = binding$0.SchedulerBinding.instance;
-      t2 == null ? null : t2.resetEpoch();
+      t3 = binding$0.SchedulerBinding.instance;
+      t3 == null ? null : t3.resetEpoch();
       binding$0._timeDilation = value;
     }
   });
@@ -1257,10 +1298,10 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const _nextPlatformViewId = dart.privateName(platform_views, "_nextPlatformViewId");
   platform_views.PlatformViewsRegistry = class PlatformViewsRegistry extends core.Object {
     getNextPlatformViewId() {
-      let t2;
-      t2 = this[_nextPlatformViewId];
-      this[_nextPlatformViewId] = dart.notNull(t2) + 1;
-      return t2;
+      let t3;
+      t3 = this[_nextPlatformViewId];
+      this[_nextPlatformViewId] = dart.notNull(t3) + 1;
+      return t3;
     }
   };
   (platform_views.PlatformViewsRegistry._instance = function() {
@@ -1302,7 +1343,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return null;
     }
     static initAndroidView(opts) {
-      let t2;
+      let t3;
       let id = opts && 'id' in opts ? opts.id : null;
       let viewType = opts && 'viewType' in opts ? opts.viewType : null;
       let layoutDirection = opts && 'layoutDirection' in opts ? opts.layoutDirection : null;
@@ -1314,8 +1355,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       if (!(layoutDirection != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/services/platform_views.dart", 119, 12, "layoutDirection != null");
       if (!(creationParams == null || creationParamsCodec != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/services/platform_views.dart", 120, 12, "creationParams == null || creationParamsCodec != null");
       let controller = new platform_views.AndroidViewController.__(id, viewType, creationParams, creationParamsCodec, layoutDirection);
-      platform_views.PlatformViewsService._instance[_focusCallbacks][$_set](id, (t2 = onFocus, t2 == null ? dart.fn(() => {
-      }, VoidToNull()) : t2));
+      platform_views.PlatformViewsService._instance[_focusCallbacks][$_set](id, (t3 = onFocus, t3 == null ? dart.fn(() => {
+      }, VoidToNull()) : t3));
       return controller;
     }
     static initUiKitView(opts) {
@@ -1360,8 +1401,8 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     set _serviceInstance(_) {}
   });
   const _asList = dart.privateName(platform_views, "_asList");
-  const AndroidPointerProperties_id = dart.privateName(platform_views, "AndroidPointerProperties.id");
-  const AndroidPointerProperties_toolType = dart.privateName(platform_views, "AndroidPointerProperties.toolType");
+  const id$ = dart.privateName(platform_views, "AndroidPointerProperties.id");
+  const toolType$ = dart.privateName(platform_views, "AndroidPointerProperties.toolType");
   platform_views.AndroidPointerProperties = class AndroidPointerProperties extends core.Object {
     get id() {
       return this[id$];
@@ -1392,8 +1433,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = platform_views.AndroidPointerProperties.prototype;
   dart.addTypeTests(platform_views.AndroidPointerProperties);
-  const id$ = AndroidPointerProperties_id;
-  const toolType$ = AndroidPointerProperties_toolType;
   dart.setMethodSignature(platform_views.AndroidPointerProperties, () => ({
     __proto__: dart.getMethods(platform_views.AndroidPointerProperties.__proto__),
     [_asList]: dart.fnType(core.List$(core.int), [])
@@ -1422,15 +1461,15 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return 4;
     }
   });
-  const AndroidPointerCoords_orientation = dart.privateName(platform_views, "AndroidPointerCoords.orientation");
-  const AndroidPointerCoords_pressure = dart.privateName(platform_views, "AndroidPointerCoords.pressure");
-  const AndroidPointerCoords_size = dart.privateName(platform_views, "AndroidPointerCoords.size");
-  const AndroidPointerCoords_toolMajor = dart.privateName(platform_views, "AndroidPointerCoords.toolMajor");
-  const AndroidPointerCoords_toolMinor = dart.privateName(platform_views, "AndroidPointerCoords.toolMinor");
-  const AndroidPointerCoords_touchMajor = dart.privateName(platform_views, "AndroidPointerCoords.touchMajor");
-  const AndroidPointerCoords_touchMinor = dart.privateName(platform_views, "AndroidPointerCoords.touchMinor");
-  const AndroidPointerCoords_x = dart.privateName(platform_views, "AndroidPointerCoords.x");
-  const AndroidPointerCoords_y = dart.privateName(platform_views, "AndroidPointerCoords.y");
+  const orientation$ = dart.privateName(platform_views, "AndroidPointerCoords.orientation");
+  const pressure$ = dart.privateName(platform_views, "AndroidPointerCoords.pressure");
+  const size$ = dart.privateName(platform_views, "AndroidPointerCoords.size");
+  const toolMajor$ = dart.privateName(platform_views, "AndroidPointerCoords.toolMajor");
+  const toolMinor$ = dart.privateName(platform_views, "AndroidPointerCoords.toolMinor");
+  const touchMajor$ = dart.privateName(platform_views, "AndroidPointerCoords.touchMajor");
+  const touchMinor$ = dart.privateName(platform_views, "AndroidPointerCoords.touchMinor");
+  const x$ = dart.privateName(platform_views, "AndroidPointerCoords.x");
+  const y$ = dart.privateName(platform_views, "AndroidPointerCoords.y");
   platform_views.AndroidPointerCoords = class AndroidPointerCoords extends core.Object {
     get orientation() {
       return this[orientation$];
@@ -1524,15 +1563,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = platform_views.AndroidPointerCoords.prototype;
   dart.addTypeTests(platform_views.AndroidPointerCoords);
-  const orientation$ = AndroidPointerCoords_orientation;
-  const pressure$ = AndroidPointerCoords_pressure;
-  const size$ = AndroidPointerCoords_size;
-  const toolMajor$ = AndroidPointerCoords_toolMajor;
-  const toolMinor$ = AndroidPointerCoords_toolMinor;
-  const touchMajor$ = AndroidPointerCoords_touchMajor;
-  const touchMinor$ = AndroidPointerCoords_touchMinor;
-  const x$ = AndroidPointerCoords_x;
-  const y$ = AndroidPointerCoords_y;
   dart.setMethodSignature(platform_views.AndroidPointerCoords, () => ({
     __proto__: dart.getMethods(platform_views.AndroidPointerCoords.__proto__),
     [_asList]: dart.fnType(core.List$(core.double), [])
@@ -1551,20 +1581,20 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     y: dart.finalFieldType(core.double)
   }));
   dart.defineExtensionMethods(platform_views.AndroidPointerCoords, ['toString']);
-  const AndroidMotionEvent_downTime = dart.privateName(platform_views, "AndroidMotionEvent.downTime");
-  const AndroidMotionEvent_eventTime = dart.privateName(platform_views, "AndroidMotionEvent.eventTime");
-  const AndroidMotionEvent_action = dart.privateName(platform_views, "AndroidMotionEvent.action");
-  const AndroidMotionEvent_pointerCount = dart.privateName(platform_views, "AndroidMotionEvent.pointerCount");
-  const AndroidMotionEvent_pointerProperties = dart.privateName(platform_views, "AndroidMotionEvent.pointerProperties");
-  const AndroidMotionEvent_pointerCoords = dart.privateName(platform_views, "AndroidMotionEvent.pointerCoords");
-  const AndroidMotionEvent_metaState = dart.privateName(platform_views, "AndroidMotionEvent.metaState");
-  const AndroidMotionEvent_buttonState = dart.privateName(platform_views, "AndroidMotionEvent.buttonState");
-  const AndroidMotionEvent_xPrecision = dart.privateName(platform_views, "AndroidMotionEvent.xPrecision");
-  const AndroidMotionEvent_yPrecision = dart.privateName(platform_views, "AndroidMotionEvent.yPrecision");
-  const AndroidMotionEvent_deviceId = dart.privateName(platform_views, "AndroidMotionEvent.deviceId");
-  const AndroidMotionEvent_edgeFlags = dart.privateName(platform_views, "AndroidMotionEvent.edgeFlags");
-  const AndroidMotionEvent_source = dart.privateName(platform_views, "AndroidMotionEvent.source");
-  const AndroidMotionEvent_flags = dart.privateName(platform_views, "AndroidMotionEvent.flags");
+  const downTime$ = dart.privateName(platform_views, "AndroidMotionEvent.downTime");
+  const eventTime$ = dart.privateName(platform_views, "AndroidMotionEvent.eventTime");
+  const action$ = dart.privateName(platform_views, "AndroidMotionEvent.action");
+  const pointerCount$ = dart.privateName(platform_views, "AndroidMotionEvent.pointerCount");
+  const pointerProperties$ = dart.privateName(platform_views, "AndroidMotionEvent.pointerProperties");
+  const pointerCoords$ = dart.privateName(platform_views, "AndroidMotionEvent.pointerCoords");
+  const metaState$ = dart.privateName(platform_views, "AndroidMotionEvent.metaState");
+  const buttonState$ = dart.privateName(platform_views, "AndroidMotionEvent.buttonState");
+  const xPrecision$ = dart.privateName(platform_views, "AndroidMotionEvent.xPrecision");
+  const yPrecision$ = dart.privateName(platform_views, "AndroidMotionEvent.yPrecision");
+  const deviceId$ = dart.privateName(platform_views, "AndroidMotionEvent.deviceId");
+  const edgeFlags$ = dart.privateName(platform_views, "AndroidMotionEvent.edgeFlags");
+  const source$ = dart.privateName(platform_views, "AndroidMotionEvent.source");
+  const flags$ = dart.privateName(platform_views, "AndroidMotionEvent.flags");
   platform_views.AndroidMotionEvent = class AndroidMotionEvent extends core.Object {
     get downTime() {
       return this[downTime$];
@@ -1705,20 +1735,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = platform_views.AndroidMotionEvent.prototype;
   dart.addTypeTests(platform_views.AndroidMotionEvent);
-  const downTime$ = AndroidMotionEvent_downTime;
-  const eventTime$ = AndroidMotionEvent_eventTime;
-  const action$ = AndroidMotionEvent_action;
-  const pointerCount$ = AndroidMotionEvent_pointerCount;
-  const pointerProperties$ = AndroidMotionEvent_pointerProperties;
-  const pointerCoords$ = AndroidMotionEvent_pointerCoords;
-  const metaState$ = AndroidMotionEvent_metaState;
-  const buttonState$ = AndroidMotionEvent_buttonState;
-  const xPrecision$ = AndroidMotionEvent_xPrecision;
-  const yPrecision$ = AndroidMotionEvent_yPrecision;
-  const deviceId$ = AndroidMotionEvent_deviceId;
-  const edgeFlags$ = AndroidMotionEvent_edgeFlags;
-  const source$ = AndroidMotionEvent_source;
-  const flags$ = AndroidMotionEvent_flags;
   dart.setMethodSignature(platform_views.AndroidMotionEvent, () => ({
     __proto__: dart.getMethods(platform_views.AndroidMotionEvent.__proto__),
     [_asList]: dart.fnType(core.List, [core.int])
@@ -1743,12 +1759,12 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   }));
   dart.defineExtensionMethods(platform_views.AndroidMotionEvent, ['toString']);
   const _name$0 = dart.privateName(platform_views, "_name");
+  let C12;
   let C13;
   let C14;
   let C15;
   let C16;
   let C17;
-  let C18;
   platform_views._AndroidViewState = class _AndroidViewState extends core.Object {
     toString() {
       return this[_name$0];
@@ -1767,12 +1783,12 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     [_name$0]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(platform_views._AndroidViewState, ['toString']);
-  platform_views._AndroidViewState.waitingForSize = C13 || CT.C13;
-  platform_views._AndroidViewState.creating = C14 || CT.C14;
-  platform_views._AndroidViewState.created = C15 || CT.C15;
-  platform_views._AndroidViewState.createFailed = C16 || CT.C16;
-  platform_views._AndroidViewState.disposed = C17 || CT.C17;
-  platform_views._AndroidViewState.values = C18 || CT.C18;
+  platform_views._AndroidViewState.waitingForSize = C12 || CT.C12;
+  platform_views._AndroidViewState.creating = C13 || CT.C13;
+  platform_views._AndroidViewState.created = C14 || CT.C14;
+  platform_views._AndroidViewState.createFailed = C15 || CT.C15;
+  platform_views._AndroidViewState.disposed = C16 || CT.C16;
+  platform_views._AndroidViewState.values = C17 || CT.C17;
   const _textureId = dart.privateName(platform_views, "_textureId");
   const _platformViewCreatedCallbacks = dart.privateName(platform_views, "_platformViewCreatedCallbacks");
   const _viewType = dart.privateName(platform_views, "_viewType");
@@ -1781,9 +1797,9 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const _layoutDirection = dart.privateName(platform_views, "_layoutDirection");
   const _state = dart.privateName(platform_views, "_state");
   const _create = dart.privateName(platform_views, "_create");
+  let C18;
   let C19;
-  let C20;
-  const AndroidViewController_id = dart.privateName(platform_views, "AndroidViewController.id");
+  const id$0 = dart.privateName(platform_views, "AndroidViewController.id");
   platform_views.AndroidViewController = class AndroidViewController extends core.Object {
     get id() {
       return this[id$0];
@@ -1841,11 +1857,11 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     static _getAndroidDirection(direction) {
       if (!(direction != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/services/platform_views.dart", 596, 12, "direction != null");
       switch (direction) {
-        case C19 || CT.C19:
+        case C18 || CT.C18:
         {
           return 0;
         }
-        case C20 || CT.C20:
+        case C19 || CT.C19:
         {
           return 1;
         }
@@ -1891,7 +1907,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = platform_views.AndroidViewController.prototype;
   dart.addTypeTests(platform_views.AndroidViewController);
-  const id$0 = AndroidViewController_id;
   dart.setMethodSignature(platform_views.AndroidViewController, () => ({
     __proto__: dart.getMethods(platform_views.AndroidViewController.__proto__),
     addOnPlatformViewCreatedListener: dart.fnType(dart.void, [dart.fnType(dart.void, [core.int])]),
@@ -1947,7 +1962,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     }
   });
   const _debugDisposed = dart.privateName(platform_views, "_debugDisposed");
-  const UiKitViewController_id = dart.privateName(platform_views, "UiKitViewController.id");
+  const id$1 = dart.privateName(platform_views, "UiKitViewController.id");
   platform_views.UiKitViewController = class UiKitViewController extends core.Object {
     get id() {
       return this[id$1];
@@ -1987,7 +2002,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = platform_views.UiKitViewController.prototype;
   dart.addTypeTests(platform_views.UiKitViewController);
-  const id$1 = UiKitViewController_id;
   dart.setMethodSignature(platform_views.UiKitViewController, () => ({
     __proto__: dart.getMethods(platform_views.UiKitViewController.__proto__),
     setLayoutDirection: dart.fnType(async.Future$(dart.void), [ui.TextDirection]),
@@ -2013,9 +2027,9 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       return new platform_views.PlatformViewsRegistry._instance();
     }
   });
-  const MouseTrackerAnnotation_onEnter = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onEnter");
-  const MouseTrackerAnnotation_onHover = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onHover");
-  const MouseTrackerAnnotation_onExit = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onExit");
+  const onEnter$ = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onEnter");
+  const onHover$ = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onHover");
+  const onExit$ = dart.privateName(mouse_tracking, "MouseTrackerAnnotation.onExit");
   mouse_tracking.MouseTrackerAnnotation = class MouseTrackerAnnotation extends core.Object {
     get onEnter() {
       return this[onEnter$];
@@ -2054,9 +2068,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     ;
   }).prototype = mouse_tracking.MouseTrackerAnnotation.prototype;
   dart.addTypeTests(mouse_tracking.MouseTrackerAnnotation);
-  const onEnter$ = MouseTrackerAnnotation_onEnter;
-  const onHover$ = MouseTrackerAnnotation_onHover;
-  const onExit$ = MouseTrackerAnnotation_onExit;
   dart.setLibraryUri(mouse_tracking.MouseTrackerAnnotation, "package:flutter/src/gestures/mouse_tracking.dart");
   dart.setFieldSignature(mouse_tracking.MouseTrackerAnnotation, () => ({
     __proto__: dart.getFields(mouse_tracking.MouseTrackerAnnotation.__proto__),
@@ -2120,7 +2131,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
   const _removeMouseDevice = dart.privateName(mouse_tracking, "_removeMouseDevice");
   const _checkAllDevicesUpdates = dart.privateName(mouse_tracking, "_checkAllDevicesUpdates");
   const _scheduleMousePositionCheck = dart.privateName(mouse_tracking, "_scheduleMousePositionCheck");
-  const MouseTracker_annotationFinder = dart.privateName(mouse_tracking, "MouseTracker.annotationFinder");
+  const annotationFinder$ = dart.privateName(mouse_tracking, "MouseTracker.annotationFinder");
   mouse_tracking.MouseTracker = class MouseTracker extends change_notifier.ChangeNotifier {
     get annotationFinder() {
       return this[annotationFinder$];
@@ -2133,12 +2144,12 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       this[_router$].removeGlobalRoute(dart.bind(this, _handleEvent));
     }
     [_guaranteeMouseState](device, mostRecentEvent) {
-      let t2;
+      let t3;
       let currentState = this[_mouseStates][$_get](device);
       if (currentState == null) {
         this[_addMouseDevice](device, mostRecentEvent);
       }
-      let result = (t2 = currentState, t2 == null ? this[_mouseStates][$_get](device) : t2);
+      let result = (t3 = currentState, t3 == null ? this[_mouseStates][$_get](device) : t3);
       if (!(result != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/gestures/mouse_tracking.dart", 170, 12, "result != null");
       return result;
     }
@@ -2192,13 +2203,13 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
       }
     }
     [_checkDeviceUpdates](opts) {
-      let t2;
+      let t3;
       let device = opts && 'device' in opts ? opts.device : null;
       let disconnectedMouseState = opts && 'disconnectedMouseState' in opts ? opts.disconnectedMouseState : null;
-      let mouseState = (t2 = disconnectedMouseState, t2 == null ? this[_mouseStates][$_get](device) : t2);
+      let mouseState = (t3 = disconnectedMouseState, t3 == null ? this[_mouseStates][$_get](device) : t3);
       let thisDeviceIsConnected = !dart.equals(mouseState, disconnectedMouseState);
       if (!(mouseState != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter/src/gestures/mouse_tracking.dart", 260, 12, "mouseState != null");
-      let nextAnnotations = LinkedHashSetOfMouseTrackerAnnotation()._check(dart.test(this[_hasAttachedAnnotations]) && thisDeviceIsConnected ? LinkedHashSetOfMouseTrackerAnnotation().from(this.annotationFinder(mouseState.mostRecentEvent.position)) : LinkedHashSetOfMouseTrackerAnnotation().new());
+      let nextAnnotations = dart.test(this[_hasAttachedAnnotations]) && thisDeviceIsConnected ? LinkedHashSetOfMouseTrackerAnnotation().from(this.annotationFinder(mouseState.mostRecentEvent.position)) : LinkedHashSetOfMouseTrackerAnnotation().as(LinkedHashSetOfMouseTrackerAnnotation().new());
       mouse_tracking.MouseTracker._dispatchDeviceCallbacks({currentState: mouseState, nextAnnotations: nextAnnotations});
       mouseState.lastAnnotations = nextAnnotations;
     }
@@ -2271,7 +2282,6 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     this[_router$].addGlobalRoute(dart.bind(this, _handleEvent));
   }).prototype = mouse_tracking.MouseTracker.prototype;
   dart.addTypeTests(mouse_tracking.MouseTracker);
-  const annotationFinder$ = MouseTracker_annotationFinder;
   dart.setMethodSignature(mouse_tracking.MouseTracker, () => ({
     __proto__: dart.getMethods(mouse_tracking.MouseTracker.__proto__),
     [_guaranteeMouseState]: dart.fnType(mouse_tracking._MouseState, [core.int, events.PointerEvent]),
@@ -2279,7 +2289,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     [_removeMouseDevice]: dart.fnType(dart.void, [core.int, events.PointerEvent]),
     [_handleEvent]: dart.fnType(dart.void, [events.PointerEvent]),
     [_scheduleMousePositionCheck]: dart.fnType(dart.void, []),
-    [_checkDeviceUpdates]: dart.fnType(dart.void, [], {device: core.int, disconnectedMouseState: mouse_tracking._MouseState}),
+    [_checkDeviceUpdates]: dart.fnType(dart.void, [], {device: core.int, disconnectedMouseState: mouse_tracking._MouseState}, {}),
     [_checkAllDevicesUpdates]: dart.fnType(dart.void, []),
     isAnnotationAttached: dart.fnType(core.bool, [mouse_tracking.MouseTrackerAnnotation]),
     attachAnnotation: dart.fnType(dart.void, [mouse_tracking.MouseTrackerAnnotation]),
@@ -2308,7 +2318,7 @@ define(['dart_sdk', 'packages/flutter/src/foundation/_bitfield_web', 'packages/c
     "package:flutter/gestures.dart": gestures,
     "package:flutter/src/gestures/mouse_tracking.dart": mouse_tracking
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["src/scheduler/ticker.dart","src/scheduler/binding.dart","src/services/platform_views.dart","src/gestures/mouse_tracking.dart"],"names":[],"mappings":"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","file":"gestures.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["src/scheduler/ticker.dart","src/scheduler/binding.dart","src/services/platform_views.dart","src/gestures/mouse_tracking.dart"],"names":[],"mappings":"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","file":"gestures.ddc.js"}');
   // Exports:
   return {
     scheduler: scheduler,

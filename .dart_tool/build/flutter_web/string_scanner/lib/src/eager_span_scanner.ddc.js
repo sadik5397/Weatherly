@@ -116,8 +116,8 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
   const _lastMatch = dart.privateName(string_scanner, "_lastMatch");
   const _lastMatchPosition = dart.privateName(string_scanner, "_lastMatchPosition");
   const _fail = dart.privateName(string_scanner, "_fail");
-  const StringScanner_sourceUrl = dart.privateName(string_scanner, "StringScanner.sourceUrl");
-  const StringScanner_string = dart.privateName(string_scanner, "StringScanner.string");
+  const sourceUrl$ = dart.privateName(string_scanner, "StringScanner.sourceUrl");
+  const string$ = dart.privateName(string_scanner, "StringScanner.string");
   string_scanner.StringScanner = class StringScanner extends core.Object {
     get sourceUrl() {
       return this[sourceUrl$];
@@ -246,20 +246,18 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     if (position != null) this.position = position;
   }).prototype = string_scanner.StringScanner.prototype;
   dart.addTypeTests(string_scanner.StringScanner);
-  const sourceUrl$ = StringScanner_sourceUrl;
-  const string$ = StringScanner_string;
   dart.setMethodSignature(string_scanner.StringScanner, () => ({
     __proto__: dart.getMethods(string_scanner.StringScanner.__proto__),
     readChar: dart.fnType(core.int, []),
     peekChar: dart.fnType(core.int, [], [core.int]),
     scanChar: dart.fnType(core.bool, [core.int]),
-    expectChar: dart.fnType(dart.void, [core.int], {name: core.String}),
+    expectChar: dart.fnType(dart.void, [core.int], {name: core.String}, {}),
     scan: dart.fnType(core.bool, [core.Pattern]),
-    expect: dart.fnType(dart.void, [core.Pattern], {name: core.String}),
+    expect: dart.fnType(dart.void, [core.Pattern], {name: core.String}, {}),
     expectDone: dart.fnType(dart.void, []),
     matches: dart.fnType(core.bool, [core.Pattern]),
     substring: dart.fnType(core.String, [core.int], [core.int]),
-    error: dart.fnType(dart.void, [core.String], {length: core.int, match: core.Match, position: core.int}),
+    error: dart.fnType(dart.void, [core.String], {length: core.int, match: core.Match, position: core.int}, {}),
     [_fail]: dart.fnType(dart.void, [core.String])
   }));
   dart.setGetterSignature(string_scanner.StringScanner, () => ({
@@ -396,7 +394,7 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
   }));
   let C7;
   const _scanner$ = dart.privateName(line_scanner, "_scanner");
-  const _SpanScannerState__scanner = dart.privateName(span_scanner, "_SpanScannerState._scanner");
+  const _scanner$0 = dart.privateName(span_scanner, "_SpanScannerState._scanner");
   span_scanner._SpanScannerState = class _SpanScannerState extends core.Object {
     get [_scanner]() {
       return this[_scanner$0];
@@ -420,7 +418,6 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     ;
   }).prototype = span_scanner._SpanScannerState.prototype;
   dart.addTypeTests(span_scanner._SpanScannerState);
-  const _scanner$0 = _SpanScannerState__scanner;
   span_scanner._SpanScannerState[dart.implements] = () => [line_scanner.LineScannerState];
   dart.setGetterSignature(span_scanner._SpanScannerState, () => ({
     __proto__: dart.getGetters(span_scanner._SpanScannerState.__proto__),
@@ -493,8 +490,8 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
   let C16;
   const _lastSpan_ = dart.privateName(relative_span_scanner, "_lastSpan=");
   let C17;
-  const RelativeSpanScanner__sourceFile = dart.privateName(relative_span_scanner, "RelativeSpanScanner._sourceFile");
-  const RelativeSpanScanner__lastSpan = dart.privateName(relative_span_scanner, "RelativeSpanScanner._lastSpan");
+  const _sourceFile$0 = dart.privateName(relative_span_scanner, "RelativeSpanScanner._sourceFile");
+  const _lastSpan$0 = dart.privateName(relative_span_scanner, "RelativeSpanScanner._lastSpan");
   relative_span_scanner.RelativeSpanScanner = class RelativeSpanScanner extends string_scanner.StringScanner {
     get [_sourceFile$]() {
       return this[_sourceFile$0];
@@ -597,8 +594,6 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     ;
   }).prototype = relative_span_scanner.RelativeSpanScanner.prototype;
   dart.addTypeTests(relative_span_scanner.RelativeSpanScanner);
-  const _sourceFile$0 = RelativeSpanScanner__sourceFile;
-  const _lastSpan$0 = RelativeSpanScanner__lastSpan;
   relative_span_scanner.RelativeSpanScanner[dart.implements] = () => [span_scanner.SpanScanner];
   dart.setMethodSignature(relative_span_scanner.RelativeSpanScanner, () => ({
     __proto__: dart.getMethods(relative_span_scanner.RelativeSpanScanner.__proto__),
@@ -635,7 +630,7 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     [_lastSpan$]: dart.fieldType(file.FileSpan)
   }));
   let C18;
-  const _SpanScannerState__scanner$ = dart.privateName(relative_span_scanner, "_SpanScannerState._scanner");
+  const _scanner$2 = dart.privateName(relative_span_scanner, "_SpanScannerState._scanner");
   relative_span_scanner._SpanScannerState = class _SpanScannerState extends core.Object {
     get [_scanner$1]() {
       return this[_scanner$2];
@@ -659,7 +654,6 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     ;
   }).prototype = relative_span_scanner._SpanScannerState.prototype;
   dart.addTypeTests(relative_span_scanner._SpanScannerState);
-  const _scanner$2 = _SpanScannerState__scanner$;
   relative_span_scanner._SpanScannerState[dart.implements] = () => [line_scanner.LineScannerState];
   dart.setGetterSignature(relative_span_scanner._SpanScannerState, () => ({
     __proto__: dart.getGetters(relative_span_scanner._SpanScannerState.__proto__),
@@ -785,9 +779,9 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     [_line$]: dart.fieldType(core.int),
     [_column$]: dart.fieldType(core.int)
   }));
-  const LineScannerState_position = dart.privateName(line_scanner, "LineScannerState.position");
-  const LineScannerState_line = dart.privateName(line_scanner, "LineScannerState.line");
-  const LineScannerState_column = dart.privateName(line_scanner, "LineScannerState.column");
+  const position$ = dart.privateName(line_scanner, "LineScannerState.position");
+  const line$ = dart.privateName(line_scanner, "LineScannerState.line");
+  const column$ = dart.privateName(line_scanner, "LineScannerState.column");
   line_scanner.LineScannerState = class LineScannerState extends core.Object {
     get position() {
       return this[position$];
@@ -816,9 +810,6 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     ;
   }).prototype = line_scanner.LineScannerState.prototype;
   dart.addTypeTests(line_scanner.LineScannerState);
-  const position$ = LineScannerState_position;
-  const line$ = LineScannerState_line;
-  const column$ = LineScannerState_column;
   dart.setLibraryUri(line_scanner.LineScannerState, "package:string_scanner/src/line_scanner.dart");
   dart.setFieldSignature(line_scanner.LineScannerState, () => ({
     __proto__: dart.getFields(line_scanner.LineScannerState.__proto__),
@@ -944,7 +935,7 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     [_column$1]: dart.fieldType(core.int)
   }));
   let C19;
-  const _EagerSpanScannerState__scanner = dart.privateName(eager_span_scanner, "_EagerSpanScannerState._scanner");
+  const _scanner$4 = dart.privateName(eager_span_scanner, "_EagerSpanScannerState._scanner");
   eager_span_scanner._EagerSpanScannerState = class _EagerSpanScannerState extends core.Object {
     get [_scanner$3]() {
       return this[_scanner$4];
@@ -964,7 +955,6 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     ;
   }).prototype = eager_span_scanner._EagerSpanScannerState.prototype;
   dart.addTypeTests(eager_span_scanner._EagerSpanScannerState);
-  const _scanner$4 = _EagerSpanScannerState__scanner;
   eager_span_scanner._EagerSpanScannerState[dart.implements] = () => [line_scanner.LineScannerState];
   dart.setGetterSignature(eager_span_scanner._EagerSpanScannerState, () => ({
     __proto__: dart.getGetters(eager_span_scanner._EagerSpanScannerState.__proto__),
@@ -993,7 +983,7 @@ define(['dart_sdk', 'packages/source_span/source_span'], function(dart_sdk, pack
     "package:string_scanner/src/eager_span_scanner.dart": eager_span_scanner,
     "package:string_scanner/string_scanner.dart": string_scanner$
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["string_scanner.dart","span_scanner.dart","utils.dart","exception.dart","relative_span_scanner.dart","line_scanner.dart","eager_span_scanner.dart"],"names":[],"mappings":"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","file":"eager_span_scanner.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["string_scanner.dart","span_scanner.dart","utils.dart","exception.dart","relative_span_scanner.dart","line_scanner.dart","eager_span_scanner.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAiBY;;;;;;IAGG;;;;;;;AAGO;IAAS;iBACZ;AACf,UAAa,aAAT,QAAQ,IAAG,KAAc,aAAT,QAAQ,IAAG,AAAO;AACa,QAAjD,WAAM,2BAAc,AAA4B,+BAAT,QAAQ;;AAG7B,MAApB,kBAAY,QAAQ;AACH,MAAjB,mBAAa;IACf;;AAUE,UAAI,mBAAa,0BAAoB,AAAiB,mBAAJ;AAClD,YAAO;IACT;;AAMmB,YAAA,AAAO,yBAAU;IAAS;;AAG1B,YAAA,AAAS,mBAAG,AAAO;IAAM;;;AAkB1C,oBAAI,cAAQ,AAAmB,YAAb;AAClB,YAAO,AAAO,2BAAoB,sBAAT,qCAAS;IACpC;aASkB;;AACJ,MAAZ,AAAO,MAAD,IAAC,OAAP,SAAW,IAAJ;AACH,kBAAiB,aAAT,8BAAW,MAAM;AAC7B,UAAI,AAAM,KAAD,GAAG,KAAK,AAAM,KAAD,IAAI,AAAO,oBAAQ,MAAO;AAChD,YAAO,AAAO,0BAAW,KAAK;IAChC;aAKkB;AAChB,oBAAI,cAAQ,MAAO;AACnB,UAAI,AAAO,yBAAW,qBAAc,SAAS,EAAE,MAAO;AAC3C,MAAX,kBAAS,aAAT,mBAAS;AACT,YAAO;IACT;eAQoB;UAAmB;AACrC,oBAAI,cAAS,SAAS,IAAG;AAEzB,UAAI,AAAK,IAAD,IAAI;AACV,YAAI,AAAU,SAAD;AACE,UAAb,OAAO;cACF,KAAI,AAAU,SAAD;AACJ,UAAd,OAAO;;AAEqC,UAA5C,OAAO,AAAqC,gBAA1B,yBAAa,SAAS,KAAE;;;AAInC,MAAX,YAAM,IAAI;IACZ;SAMkB;AACZ,oBAAU,aAAQ,OAAO;AAC7B,oBAAI,OAAO;AACiB,QAA1B,kBAAY,AAAW;AACO,QAA9B,2BAAqB;;AAEvB,YAAO,QAAO;IAChB;WASoB;UAAiB;AACnC,oBAAI,UAAK,OAAO,IAAG;AAEnB,UAAI,AAAK,IAAD,IAAI;AACV,YAAY,eAAR,OAAO;AACL,uBAAS,AAAQ,OAAD;AACF,UAAlB,OAAO,AAAW,eAAR,MAAM;;AAGsD,UADtE,OACY,AAAW,AAAyB,cAA5C,OAAO,eAAuB,MAAM,qBAAmB,MAAK;AAChD,UAAhB,OAAO,AAAS,gBAAN,IAAI;;;AAGP,MAAX,YAAM,IAAI;IACZ;;AAKE,oBAAI,cAAQ;AACU,MAAtB,YAAM;IACR;YAMqB;AACiC,MAApD,mBAAa,AAAQ,OAAD,iBAAe,aAAQ;AACb,MAA9B,2BAAqB;AACrB,YAAO,AAAW,qBAAG;IACvB;cAMqB,OAAY;;AACf,MAAhB,AAAI,GAAD,IAAC,OAAJ,MAAQ,gBAAJ;AACJ,YAAO,AAAO,yBAAU,KAAK,EAAE,GAAG;IACpC;UAgBkB;UAAgB;UAAW;UAAc;AACP,MAAlD,wBAAkB,aAAQ,KAAK,EAAE,QAAQ,EAAE,MAAM;AAEjD,UAAI,AAAM,KAAD,IAAI,QAAQ,AAAS,QAAD,IAAI,QAAQ,AAAO,MAAD,IAAI,MAAM,AAAiB,QAAT;AACT,MAAxD,AAAS,QAAD,IAAC,OAAT,WAAa,AAAM,KAAD,IAAI,OAAY,gBAAW,AAAM,KAAD,SAAzC;AAC6C,MAAtD,AAAO,MAAD,IAAC,OAAP,SAAW,AAAM,KAAD,IAAI,OAAO,IAAc,aAAV,AAAM,KAAD,qBAAO,AAAM,KAAD,UAAzC;AAEH,uBAAwB,+BAAW,mBAAa;AAChD,iBAAO,AAAW,UAAD,MAAM,QAAQ,EAAW,aAAT,QAAQ,iBAAG,MAAM;AACH,MAAnD,WAAM,yCAAuB,OAAO,EAAE,IAAI,EAAE;IAC9C;YAKkB;AACuC,MAAvD,WAAM,AAAiB,uBAAN,IAAI,oBAAc,uBAAkB;IACvD;;+CA1JmB;QAAS;QAAe;IA1BvC,kBAAY;IAYV;IACF;IAae;IACH,mBACI,OAAV,SAAS,eAAiB,eAAM,SAAS,IAAc,YAAV,SAAS;AAC9D,QAAI,QAAQ,IAAI,MAAW,AAAmB,gBAAR,QAAQ;EAChD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AC1CgB,YAAA,AAAY,2BAAQ;IAAS;;AAC3B,YAAA,AAAY,6BAAU;IAAS;;AAEnB,oDAAkB,MAAM;IAAS;cAEpC;AACzB,WAAU,kCAAN,KAAK,KACa,AAAsB,kCAA5B,KAAK,gBAAiC;AAE5B,QADxB,WAAM,2BAAc,oDAChB;;AAGmB,MAAzB,gBAAW,AAAM,KAAD;IAClB;;AAOE,UAAI,AAAU,kBAAG,MAAM,AAAgB,kBAAJ;AACnC,YAAO;IACT;;AAK6B,YAAA,AAAY,4BAAS;IAAS;;AAGjC,YAAA,AAAS;IAAW;aAmCX,YAA8B;;AAC3D,wBAAc,AAAS,QAAD,IAAI,OAAO,gBAAW,AAAS,QAAD;AACxD,YAAO,AAAY,wBAAK,AAAW,UAAD,WAAW,WAAW;IAC1D;YAEqB;AACnB,qBAAW,cAAQ,OAAO;AACR,QAAhB,kBAAY;AACZ,cAAO;;AAG4C,MAArD,kBAAY,AAAY,uBAAK,eAAU,AAAU;AACjD,YAAO;IACT;UAEkB;UAAgB;UAAW;UAAc;AACP,MAAlD,wBAAkB,aAAQ,KAAK,EAAE,QAAQ,EAAE,MAAM;AAEjD,UAAI,AAAM,KAAD,IAAI,QAAQ,AAAS,QAAD,IAAI,QAAQ,AAAO,MAAD,IAAI,MAAM,AAAiB,QAAT;AACT,MAAxD,AAAS,QAAD,IAAC,OAAT,WAAa,AAAM,KAAD,IAAI,OAAY,gBAAW,AAAM,KAAD,SAAzC;AAC6C,MAAtD,AAAO,MAAD,IAAC,OAAP,SAAW,AAAM,KAAD,IAAI,OAAO,IAAc,aAAV,AAAM,KAAD,qBAAO,AAAM,KAAD,UAAzC;AAEH,iBAAO,AAAY,uBAAK,QAAQ,EAAW,aAAT,QAAQ,iBAAG,MAAM;AACJ,MAAnD,WAAM,yCAAuB,OAAO,EAAE,IAAI,EAAE;IAC9C;;;;;;;;;;;;;;;;;;;;;;;2CApDmB;QAAS;QAAe;IAblC;IAcS,oBAAa,+BAAW,MAAM,QAAO,SAAS;AAC1D,sDAAM,MAAM,cAAa,SAAS,YAAY,QAAQ;;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAwD3C;;;;;;;AAGF,YAAA,AAAS,AAAY,qCAAQ;IAAS;;AACpC,YAAA,AAAS,AAAY,uCAAU;IAAS;;;;;iDAEnC,UAAe;IAAf;IAAe;;EAAS;;;;;;;;;;;;;;;uDCnHnB,QAAc,OAAW,UAAc;AACnE,QAAI,KAAK,IAAI,SAAS,QAAQ,IAAI,QAAQ,MAAM,IAAI;AACe,MAAjE,WAAM,2BAAc;;AAGtB,QAAI,QAAQ,IAAI;AACd,UAAa,aAAT,QAAQ,IAAG;AACmD,QAAhE,WAAM,wBAAW;YACZ,KAAa,aAAT,QAAQ,IAAG,AAAO,MAAD;AAEL,QADrB,WAAM,wBAAW,gDACb;;;AAIR,QAAI,MAAM,IAAI,QAAe,aAAP,MAAM,IAAG;AACiC,MAA9D,WAAM,wBAAW;;AAGnB,QAAI,QAAQ,IAAI,QAAQ,MAAM,IAAI,QAAiB,AAAS,aAAlB,QAAQ,iBAAG,MAAM,IAAG,AAAO,MAAD;AAEhD,MADlB,WAAM,wBAAW,wDACb;;EAER;;;ACnBuB,YAAa,gBAAP;IAAgB;;AAKtB,YAAA,AAAK;IAAS;;mDAEL,SAAoB,MAAa;AACzD,8DAAM,OAAO,EAAE,IAAI,EAAE,MAAM;;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ICIjB;;;;;;IAiCR;;;;;;;AAzBL,YAAsD,cAAtD,AAAY,2BAA8B,aAAtB,AAAe,4CAAS,gCAC5C,AAAe;IAAI;;AAGjB,iBAAO,AAAY,2BAA8B,aAAtB,AAAe,4CAAS;AACnD,mBACA,AAAY,6BAAgC,aAAtB,AAAe,4CAAS,uBAAgB,IAAI;AACtE,YAAO,AAAK,KAAD,IAAI,AAAe,4BACjB,aAAP,MAAM,iBAAG,AAAe,+BACxB,MAAM;IACd;;AAE8B,6DAAkB,MAAM;IAAS;cAEpC;AACzB,WAAU,2CAAN,KAAK,KACa,AAAsB,2CAA5B,KAAK,kBAAiC;AAE5B,QADxB,WAAM,2BAAc,oDAChB;;AAGmB,MAAzB,gBAAW,AAAM,KAAD;IAClB;;AAEyB;IAAS;;AAI9B,YAAA,AAAY,6BAA+B,aAAtB,AAAe,4CAAS;IAAS;;AAEhC,YAAA,AAAS;IAAW;aAOX,YAA8B;;AAC3D,wBAAc,AAAS,QAAD,IAAI,OAAO,gBAAW,AAAS,QAAD;AACxD,YAAO,AAAY,yBAA2B,aAAtB,AAAe,4CAAS,AAAW,UAAD,YAChC,aAAtB,AAAe,4CAAS,WAAW;IACzC;YAEqB;AACnB,qBAAW,cAAQ,OAAO;AACR,QAAhB,mBAAY;AACZ,cAAO;;AAIiC,MAD1C,mBAAY,AAAY,wBAA2B,aAAtB,AAAe,4CAAS,gBAC3B,aAAtB,AAAe,4CAAS,AAAU;AACtC,YAAO;IACT;UAEkB;UAAgB;UAAW;UAAc;AACP,MAAlD,wBAAkB,aAAQ,KAAK,EAAE,QAAQ,EAAE,MAAM;AAEjD,UAAI,AAAM,KAAD,IAAI,QAAQ,AAAS,QAAD,IAAI,QAAQ,AAAO,MAAD,IAAI,MAAM,AAAiB,QAAT;AACT,MAAxD,AAAS,QAAD,IAAC,OAAT,WAAa,AAAM,KAAD,IAAI,OAAY,gBAAW,AAAM,KAAD,SAAzC;AAC6C,MAAtD,AAAO,MAAD,IAAC,OAAP,SAAW,AAAM,KAAD,IAAI,OAAO,IAAc,aAAV,AAAM,KAAD,qBAAO,AAAM,KAAD,UAAzC;AAEH,iBAAO,AAAY,wBAA2B,aAAtB,AAAe,4CAAS,QAAQ,GAClC,AAAW,aAAjC,AAAe,4CAAS,QAAQ,iBAAG,MAAM;AACM,MAAnD,WAAM,yCAAuB,OAAO,EAAE,IAAI,EAAE;IAC9C;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4DAhC6B;IAPpB;IAQS,sBAAE,AAAK,IAAD;IACH,uBAAE,AAAK,IAAD;AACrB,uEAAM,AAAK,IAAD,mBAAkB,AAAK,IAAD;;EAAW;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAmCvB;;;;;;;AAGV,YAAA,AAAS,AAAY,wCAAQ;IAAS;;AACpC,YAAA,AAAS,AAAY,0CAAU;IAAS;;;;;0DAEnC,UAAe;IAAf;IAAe;;EAAS;;;;;;;;;;;;;;;;;AC1F/B;IAAK;;AAIH;IAAO;;AAWrB,YAAiB,sCAAE,MAAM,eAAU,WAAM;IAAO;;AAI3B,YAAA,AAAa,AAAO,eAAX,CAAC,aAAa,AAAW;IAAM;cAEtC;AACzB,UAAe,AAAM,KAAD,gBAAW;AAEL,QADxB,WAAM,2BAAc,oDAChB;;AAGyB,MAAzB,iBAAW,AAAM,KAAD;AACJ,MAAlB,eAAQ,AAAM,KAAD;AACS,MAAtB,iBAAU,AAAM,KAAD;IACjB;iBAEiB;AACX,wBAAc;AACU,MAAtB,iBAAW,WAAW;AAE5B,UAAgB,aAAZ,WAAW,iBAAG,WAAW;AACvB,uBAAW,mBAAY,AAAO,wBAAU,WAAW,EAAE,WAAW;AAC5C,QAAxB,eAAM,aAAN,6BAAS,AAAS,QAAD;AACjB,sBAAI,AAAS,QAAD;AAC0B,UAApC,iBAAQ,aAAR,mBAAuB,aAAZ,WAAW,iBAAG,WAAW;;AAEK,UAAzC,iBAAsB,aAAZ,WAAW,iBAAG,AAAS,AAAK,QAAN;;;AAG9B,uBAAW,mBAAY,AAAO,wBAAU,WAAW,EAAE,WAAW;AACpE,sBAAI,sBAAc,AAAS,AAAY,QAAb;AAEF,QAAxB,eAAM,aAAN,6BAAS,AAAS,QAAD;AACjB,sBAAI,AAAS,QAAD;AAC0B,UAApC,iBAAQ,aAAR,mBAAuB,aAAZ,WAAW,iBAAG,WAAW;;AAGiC,UADrE,iBACgB,AAAkD,aAA9D,WAAW,IAAG,AAAO,0BAAY,6BAAgB,WAAW,IAAI;;;IAG1E;;;;aAKkB;AAChB,qBAAW,eAAS,SAAS,IAAG,MAAO;AACR,MAA/B,4BAAqB,SAAS;AAC9B,YAAO;IACT;;AAGM,sBAAkB;AACS,MAA/B,4BAAqB,SAAS;AAC9B,YAAO,UAAS;IAClB;4BAG8B;AAC5B,UAAI,AAAU,SAAD,WAAY,AAAU,SAAD,WAAW;AACjC,QAAV,eAAM,aAAN,gBAAS;AACE,QAAX,iBAAU;;AAEE,QAAZ,iBAAQ,aAAR,kBAAW;;IAEf;SAEkB;AAChB,qBAAW,WAAK,OAAO,IAAG,MAAO;AAE7B,qBAAW,mBAAY,AAAS,oBAAC;AACb,MAAxB,eAAM,aAAN,6BAAS,AAAS,QAAD;AACjB,oBAAI,AAAS,QAAD;AACoB,QAA9B,iBAAQ,aAAR,kBAAW,AAAS,AAAI,oBAAH;;AAE4B,QAAjD,iBAAU,AAAS,AAAI,AAAO,oBAAV,yBAAY,AAAS,AAAK,QAAN;;AAG1C,YAAO;IACT;mBAI+B;AACzB,qBAAW,AAAe,AAAiB,uCAAN,IAAI;AAC7C,oBAAI,sBAAc,AAAS,AAAY,QAAb;AAC1B,YAAO,SAAQ;IACjB;;2CA7CmB;QAAS;QAAe;IAzDvC,eAAQ;IAIR,iBAAU;AAsDR,sDAAM,MAAM,cAAa,SAAS,YAAY,QAAQ;;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAqDnD;;;;;;IAGA;;;;;;IAGA;;;;;;;+CAEc,UAAe,UAAe,MAAW;IAAzC;IAAe;IAAe;IAAW;;EAAO;;;;;;;;;;;MA7HpE,2BAAc;YAAG,iBAAO;;;;;;;;;;;ACMZ;IAAK;;AAGH;IAAO;;AAIrB,+DAAuB,MAAM,eAAU,WAAM;IAAO;;AAE/B,YAAA,AAAa,AAAO,eAAX,CAAC,aAAa,AAAW;IAAM;cAEtC;AACzB,WAAU,6CAAN,KAAK,KACa,AAA2B,6CAAjC,KAAK,kBAAsC;AAEjC,QADxB,WAAM,2BAAc,oDAChB;;AAGyB,MAAzB,iBAAW,AAAM,KAAD;AACJ,MAAlB,gBAAQ,AAAM,KAAD;AACS,MAAtB,kBAAU,AAAM,KAAD;IACjB;iBAEiB;AACX,wBAAc;AACU,MAAtB,iBAAW,WAAW;AAE5B,UAAgB,aAAZ,WAAW,iBAAG,WAAW;AACvB,uBAAW,oBAAY,AAAO,wBAAU,WAAW,EAAE,WAAW;AAC5C,QAAxB,gBAAM,aAAN,8BAAS,AAAS,QAAD;AACjB,sBAAI,AAAS,QAAD;AAC0B,UAApC,kBAAQ,aAAR,oBAAuB,aAAZ,WAAW,iBAAG,WAAW;;AAEK,UAAzC,kBAAsB,aAAZ,WAAW,iBAAG,AAAS,AAAK,QAAN;;;AAG9B,uBAAW,oBAAY,AAAO,wBAAU,WAAW,EAAE,WAAW;AACpE,sBAAI,uBAAc,AAAS,AAAY,QAAb;AAEF,QAAxB,gBAAM,aAAN,8BAAS,AAAS,QAAD;AACjB,sBAAI,AAAS,QAAD;AAC0B,UAApC,kBAAQ,aAAR,oBAAuB,aAAZ,WAAW,iBAAG,WAAW;;AAGiC,UADrE,kBACgB,AAAkD,aAA9D,WAAW,IAAG,AAAO,0BAAY,mCAAgB,WAAW,IAAI;;;IAG1E;;;;aAKkB;AAChB,qBAAW,eAAS,SAAS,IAAG,MAAO;AACR,MAA/B,6BAAqB,SAAS;AAC9B,YAAO;IACT;;AAGM,sBAAkB;AACS,MAA/B,6BAAqB,SAAS;AAC9B,YAAO,UAAS;IAClB;6BAG8B;AAC5B,UAAI,AAAU,SAAD,WAAY,AAAU,SAAD,WAAW;AACjC,QAAV,gBAAM,aAAN,iBAAS;AACE,QAAX,kBAAU;;AAEE,QAAZ,kBAAQ,aAAR,mBAAW;;IAEf;SAEkB;AAChB,qBAAW,WAAK,OAAO,IAAG,MAAO;AAE7B,qBAAW,oBAAY,AAAS,oBAAC;AACb,MAAxB,gBAAM,aAAN,8BAAS,AAAS,QAAD;AACjB,oBAAI,AAAS,QAAD;AACoB,QAA9B,kBAAQ,aAAR,mBAAW,AAAS,AAAI,oBAAH;;AAE4B,QAAjD,kBAAU,AAAS,AAAI,AAAO,oBAAV,yBAAY,AAAS,AAAK,QAAN;;AAG1C,YAAO;IACT;oBAI+B;AACzB,qBAAW,AAAe,AAAiB,6CAAN,IAAI;AAC7C,oBAAI,uBAAc,AAAS,AAAY,QAAb;AAC1B,YAAO,SAAQ;IACjB;;sDA7CwB;QAAS;QAAe;IAhD5C,gBAAQ;IAGR,kBAAU;AA8CR,iEAAM,MAAM,cAAa,SAAS,YAAY,QAAQ;;EAAC;;;;;;;;;;;;;;;;;;;;IAiDtC;;;;;;;;;;4DAKK,UAAe,UAAe,MAAW;IAAzC;IAAe;IAAe;IAAW;;EAAO;;;;;;;;;;;;;;;;MA5GxE,iCAAc;YAAG,iBAAO","file":"eager_span_scanner.ddc.js"}');
   // Exports:
   return {
     src__span_scanner: span_scanner,

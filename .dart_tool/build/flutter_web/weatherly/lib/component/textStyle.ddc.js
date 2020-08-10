@@ -37,7 +37,7 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   dart.trackLibraries("packages/weatherly/component/textStyle", {
     "package:weatherly/component/textStyle.dart": textStyle
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["textStyle.dart"],"names":[],"mappings":";;;;;;;;;;;MACU,cAAI;YAAG,sCACD,iCACJ,kBACa;;;MAEf,sBAAY;YAAG,sCACT,AAAW,4CACf,kBACa;;;MAEf,kBAAQ;YAAG,yCAET,kBACa;;;MAEf,cAAI;YAAG,yCAEL,kBACa;;;MAEf,oBAAU;YAAG,sCACP,iCACJ,kBACa;;;MAEf,uBAAa;YAAG,yCAEd,kBACa","file":"textStyle.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["textStyle.dart"],"names":[],"mappings":";;;;;;;;;;;MAEU,cAAI;YAAG,sCACD,iCACJ,kBACa;;;MAEf,sBAAY;YAAG,sCACT,AAAW,4CACf,kBACa;;;MAEf,kBAAQ;YAAG,yCAET,kBACa;;;MAEf,cAAI;YAAG,yCAEL,kBACa;;;MAEf,oBAAU;YAAG,sCACP,iCACJ,kBACa;;;MAEf,uBAAa;YAAG,yCAEd,kBACa","file":"textStyle.ddc.js"}');
   // Exports:
   return {
     component__textStyle: textStyle

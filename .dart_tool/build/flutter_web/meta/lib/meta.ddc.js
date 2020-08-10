@@ -29,7 +29,7 @@ define(['dart_sdk'], function(dart_sdk) {
     get C4() {
       return C4 = dart.const({
         __proto__: meta.Immutable.prototype,
-        [Immutable_reason]: null
+        [reason$]: ""
       });
     },
     get C5() {
@@ -54,42 +54,47 @@ define(['dart_sdk'], function(dart_sdk) {
     },
     get C9() {
       return C9 = dart.const({
-        __proto__: meta._OptionalTypeArgs.prototype
+        __proto__: meta._NonVirtual.prototype
       });
     },
     get C10() {
       return C10 = dart.const({
-        __proto__: meta._Protected.prototype
+        __proto__: meta._OptionalTypeArgs.prototype
       });
     },
     get C11() {
       return C11 = dart.const({
-        __proto__: meta.Required.prototype,
-        [Required_reason]: null
+        __proto__: meta._Protected.prototype
       });
     },
     get C12() {
       return C12 = dart.const({
-        __proto__: meta._Sealed.prototype
+        __proto__: meta.Required.prototype,
+        [reason$0]: ""
       });
     },
     get C13() {
       return C13 = dart.const({
-        __proto__: meta._Virtual.prototype
+        __proto__: meta._Sealed.prototype
       });
     },
     get C14() {
       return C14 = dart.const({
-        __proto__: meta._VisibleForOverriding.prototype
+        __proto__: meta._Virtual.prototype
       });
     },
     get C15() {
       return C15 = dart.const({
+        __proto__: meta._VisibleForOverriding.prototype
+      });
+    },
+    get C16() {
+      return C16 = dart.const({
         __proto__: meta._VisibleForTesting.prototype
       });
     }
   });
-  const Immutable_reason = dart.privateName(meta, "Immutable.reason");
+  const reason$ = dart.privateName(meta, "Immutable.reason");
   meta.Immutable = class Immutable extends core.Object {
     get reason() {
       return this[reason$];
@@ -99,18 +104,17 @@ define(['dart_sdk'], function(dart_sdk) {
     }
   };
   (meta.Immutable.new = function(reason) {
-    if (reason === void 0) reason = null;
+    if (reason === void 0) reason = "";
     this[reason$] = reason;
     ;
   }).prototype = meta.Immutable.prototype;
   dart.addTypeTests(meta.Immutable);
-  const reason$ = Immutable_reason;
   dart.setLibraryUri(meta.Immutable, "package:meta/meta.dart");
   dart.setFieldSignature(meta.Immutable, () => ({
     __proto__: dart.getFields(meta.Immutable.__proto__),
     reason: dart.finalFieldType(core.String)
   }));
-  const Required_reason = dart.privateName(meta, "Required.reason");
+  const reason$0 = dart.privateName(meta, "Required.reason");
   meta.Required = class Required extends core.Object {
     get reason() {
       return this[reason$0];
@@ -120,12 +124,11 @@ define(['dart_sdk'], function(dart_sdk) {
     }
   };
   (meta.Required.new = function(reason) {
-    if (reason === void 0) reason = null;
+    if (reason === void 0) reason = "";
     this[reason$0] = reason;
     ;
   }).prototype = meta.Required.prototype;
   dart.addTypeTests(meta.Required);
-  const reason$0 = Required_reason;
   dart.setLibraryUri(meta.Required, "package:meta/meta.dart");
   dart.setFieldSignature(meta.Required, () => ({
     __proto__: dart.getFields(meta.Required.__proto__),
@@ -179,6 +182,12 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = meta._MustCallSuper.prototype;
   dart.addTypeTests(meta._MustCallSuper);
   dart.setLibraryUri(meta._MustCallSuper, "package:meta/meta.dart");
+  meta._NonVirtual = class _NonVirtual extends core.Object {};
+  (meta._NonVirtual.new = function() {
+    ;
+  }).prototype = meta._NonVirtual.prototype;
+  dart.addTypeTests(meta._NonVirtual);
+  dart.setLibraryUri(meta._NonVirtual, "package:meta/meta.dart");
   meta._OptionalTypeArgs = class _OptionalTypeArgs extends core.Object {};
   (meta._OptionalTypeArgs.new = function() {
     ;
@@ -231,6 +240,7 @@ define(['dart_sdk'], function(dart_sdk) {
   let C13;
   let C14;
   let C15;
+  let C16;
   dart.defineLazy(meta, {
     /*meta.alwaysThrows*/get alwaysThrows() {
       return C0 || CT.C0;
@@ -259,32 +269,35 @@ define(['dart_sdk'], function(dart_sdk) {
     /*meta.mustCallSuper*/get mustCallSuper() {
       return C8 || CT.C8;
     },
-    /*meta.optionalTypeArgs*/get optionalTypeArgs() {
+    /*meta.nonVirtual*/get nonVirtual() {
       return C9 || CT.C9;
     },
-    /*meta.protected*/get protected() {
+    /*meta.optionalTypeArgs*/get optionalTypeArgs() {
       return C10 || CT.C10;
     },
-    /*meta.required*/get required() {
+    /*meta.protected*/get protected() {
       return C11 || CT.C11;
     },
-    /*meta.sealed*/get sealed() {
+    /*meta.required*/get required() {
       return C12 || CT.C12;
     },
-    /*meta.virtual*/get virtual() {
+    /*meta.sealed*/get sealed() {
       return C13 || CT.C13;
     },
-    /*meta.visibleForOverriding*/get visibleForOverriding() {
+    /*meta.virtual*/get virtual() {
       return C14 || CT.C14;
     },
-    /*meta.visibleForTesting*/get visibleForTesting() {
+    /*meta.visibleForOverriding*/get visibleForOverriding() {
       return C15 || CT.C15;
+    },
+    /*meta.visibleForTesting*/get visibleForTesting() {
+      return C16 || CT.C16;
     }
   });
   dart.trackLibraries("packages/meta/meta", {
     "package:meta/meta.dart": meta
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IA+Oe;;;;;;;iCAGS;;;;EAAQ;;;;;;;;;;IAgBjB;;;;;;;gCAGQ;;;;EAAQ;;;;;;;;;;;EAIR;;;;;;EAIL;;;;;;EAIK;;;;;;EAIL;;;;;;EAID;;;;;;EAIK;;;;;;EAIJ;;;;;;EAIM;;;;;;EAIG;;;;;;EAIP;;;;;;EAIH;;;;;;EAKC;;;;;;EAIa;;;;;;EAIH;;;;;;;;;;;;;;;;;;;;MA9QR,iBAAY;;;MAWjB,YAAO;;;MAsBF,iBAAY;;;MAYjB,YAAO;;;MAYN,cAAS;;;MAQX,WAAM;;;MAQD,gBAAW;;;MAaf,YAAO;;;MAeD,kBAAa;;;MAMV,qBAAgB;;;MAkBvB,cAAS;;;MAeX,aAAQ;;;MAaT,WAAM;;;MAQL,YAAO;;;MAWM,yBAAoB;;;MAYvB,sBAAiB","file":"meta.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["meta.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAgQe;;;;;;;iCAGS;;;;EAAa;;;;;;;;;IAgBtB;;;;;;;gCAGQ;;;;EAAa;;;;;;;;;;EAIb;;;;;;EAIL;;;;;;EAIK;;;;;;EAIL;;;;;;EAID;;;;;;EAIK;;;;;;EAIJ;;;;;;EAIM;;;;;;EAIH;;;;;;EAIM;;;;;;EAIP;;;;;;EAIH;;;;;;EAKC;;;;;;EAIa;;;;;;EAIH;;;;;;;;;;;;;;;;;;;;;MAnSR,iBAAY;;;MAWjB,YAAO;;;MAsBF,iBAAY;;;MAYjB,YAAO;;;MAYN,cAAS;;;MAQX,WAAM;;;MAQD,gBAAW;;;MAaf,YAAO;;;MAeD,kBAAa;;;MAehB,eAAU;;;MAMJ,qBAAgB;;;MAmBvB,cAAS;;;MAeX,aAAQ;;;MAaT,WAAM;;;MAQL,YAAO;;;MAWM,yBAAoB;;;MAavB,sBAAiB","file":"meta.ddc.js"}');
   // Exports:
   return {
     meta: meta

@@ -8,7 +8,7 @@ define(['dart_sdk', 'packages/flare_flutter/cache', 'packages/flutter/src/gestur
   const asset_bundle_cache = Object.create(dart.library);
   const CT = Object.create(null);
   const _is_AssetBundleCache_default = Symbol('_is_AssetBundleCache_default');
-  const AssetBundleCache_bundle = dart.privateName(asset_bundle_cache, "AssetBundleCache.bundle");
+  const bundle$ = dart.privateName(asset_bundle_cache, "AssetBundleCache.bundle");
   asset_bundle_cache.AssetBundleCache$ = dart.generic(T => {
     class AssetBundleCache extends cache.Cache$(T) {
       get bundle() {
@@ -25,7 +25,6 @@ define(['dart_sdk', 'packages/flare_flutter/cache', 'packages/flutter/src/gestur
     }).prototype = AssetBundleCache.prototype;
     dart.addTypeTests(AssetBundleCache);
     AssetBundleCache.prototype[_is_AssetBundleCache_default] = true;
-    const bundle$ = AssetBundleCache_bundle;
     dart.setLibraryUri(AssetBundleCache, "package:flare_flutter/asset_bundle_cache.dart");
     dart.setFieldSignature(AssetBundleCache, () => ({
       __proto__: dart.getFields(AssetBundleCache.__proto__),

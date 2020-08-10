@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/_network_image_web', 'packages/weatherly/component/appBar', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__flutter__src__painting___network_image_web, packages__weatherly__component__appBar, packages__flutter__src__widgets__actions) {
+define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/_network_image_web', 'packages/weatherly/page/changeCity', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__flutter__src__painting___network_image_web, packages__weatherly__page__changeCity, packages__flutter__src__widgets__actions) {
   'use strict';
   const core = dart_sdk.core;
   const ui = dart_sdk.ui;
@@ -9,7 +9,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
   const colors = packages__flutter__material.src__material__colors;
   const text_theme = packages__flutter__material.src__material__text_theme;
   const text_style = packages__flutter__src__painting___network_image_web.src__painting__text_style;
-  const home = packages__weatherly__component__appBar.page__home;
+  const home = packages__weatherly__page__changeCity.page__home;
   const widget_inspector = packages__flutter__src__widgets__actions.src__widgets__widget_inspector;
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
   const binding = packages__flutter__src__widgets__actions.src__widgets__binding;
@@ -22,7 +22,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: null,
         [_Location_name]: "name",
         [_Location_column]: 18,
-        [_Location_line]: 24,
+        [_Location_line]: 21,
         [_Location_file]: null
       });
     },
@@ -35,7 +35,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 13,
-        [_Location_line]: 24,
+        [_Location_line]: 21,
         [_Location_file]: "org-dartlang-app:///packages/weatherly/main.dart"
       });
     },
@@ -45,7 +45,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: null,
         [_Location_name]: "debugShowCheckedModeBanner",
         [_Location_column]: 7,
-        [_Location_line]: 13,
+        [_Location_line]: 10,
         [_Location_file]: null
       });
     },
@@ -55,7 +55,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: null,
         [_Location_name]: "title",
         [_Location_column]: 7,
-        [_Location_line]: 14,
+        [_Location_line]: 11,
         [_Location_file]: null
       });
     },
@@ -65,7 +65,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: null,
         [_Location_name]: "theme",
         [_Location_column]: 7,
-        [_Location_line]: 15,
+        [_Location_line]: 12,
         [_Location_file]: null
       });
     },
@@ -75,7 +75,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: null,
         [_Location_name]: "home",
         [_Location_column]: 7,
-        [_Location_line]: 24,
+        [_Location_line]: 21,
         [_Location_file]: null
       });
     },
@@ -88,7 +88,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: C4 || CT.C4,
         [_Location_name]: null,
         [_Location_column]: 16,
-        [_Location_line]: 12,
+        [_Location_line]: 9,
         [_Location_file]: "org-dartlang-app:///packages/weatherly/main.dart"
       });
     },
@@ -101,7 +101,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
         [_Location_parameterLocations]: C10 || CT.C10,
         [_Location_name]: null,
         [_Location_column]: 27,
-        [_Location_line]: 7,
+        [_Location_line]: 4,
         [_Location_file]: "org-dartlang-app:///packages/weatherly/main.dart"
       });
     }
@@ -144,7 +144,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/flutter/src/painting/
   dart.trackLibraries("packages/weatherly/main", {
     "package:weatherly/main.dart": main
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAU4B;AACxB,YAAW,sDACmB,cACrB,oBACI,sCACc,mCACC,+BACX,qCACF,qCAAwB,iCACrB,qCAAwB,8BAC3B,qCAAwB,8BACxB,qCAAwB,iCAE/B,kBAAK;IAEf;;;;;;EACF;;;;;;;;;;AApBe,0BAAW;EAAQ","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAO4B;AACxB,YAAW,sDACmB,cACrB,oBACI,sCACgB,mCACD,+BACX,qCACF,qCAAwB,iCACrB,qCAAwB,8BAC3B,qCAAwB,8BACxB,qCAAwB,iCAE/B,kBAAK;IAEf;;;;;;EACF;;;;;;;;;;AApBe,0BAAW;EAAQ","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main

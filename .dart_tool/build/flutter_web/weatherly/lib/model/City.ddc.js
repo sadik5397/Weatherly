@@ -9,10 +9,10 @@ define(['dart_sdk'], function(dart_sdk) {
   let MapOfString$dynamic = () => (MapOfString$dynamic = dart.constFn(core.Map$(core.String, dart.dynamic)))();
   let IdentityMapOfString$dynamic = () => (IdentityMapOfString$dynamic = dart.constFn(_js_helper.IdentityMap$(core.String, dart.dynamic)))();
   const CT = Object.create(null);
-  const City_id = dart.privateName(City, "City.id");
-  const City_name = dart.privateName(City, "City.name");
-  const City_country = dart.privateName(City, "City.country");
-  const City_coord = dart.privateName(City, "City.coord");
+  const id$ = dart.privateName(City, "City.id");
+  const name$ = dart.privateName(City, "City.name");
+  const country$ = dart.privateName(City, "City.country");
+  const coord$ = dart.privateName(City, "City.coord");
   City.City = class City$ extends core.Object {
     get id() {
       return this[id$];
@@ -57,10 +57,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = City.City.prototype;
   dart.addTypeTests(City.City);
-  const id$ = City_id;
-  const name$ = City_name;
-  const country$ = City_country;
-  const coord$ = City_coord;
   dart.setMethodSignature(City.City, () => ({
     __proto__: dart.getMethods(City.City.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -73,8 +69,8 @@ define(['dart_sdk'], function(dart_sdk) {
     country: dart.fieldType(core.String),
     coord: dart.fieldType(City.Coord)
   }));
-  const Coord_lon = dart.privateName(City, "Coord.lon");
-  const Coord_lat = dart.privateName(City, "Coord.lat");
+  const lon$ = dart.privateName(City, "Coord.lon");
+  const lat$ = dart.privateName(City, "Coord.lat");
   City.Coord = class Coord extends core.Object {
     get lon() {
       return this[lon$];
@@ -103,8 +99,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = City.Coord.prototype;
   dart.addTypeTests(City.Coord);
-  const lon$ = Coord_lon;
-  const lat$ = Coord_lat;
   dart.setMethodSignature(City.Coord, () => ({
     __proto__: dart.getMethods(City.Coord.__proto__),
     toJson: dart.fnType(core.Map$(core.String, dart.dynamic), [])
@@ -118,7 +112,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/weatherly/model/City", {
     "package:weatherly/model/City.dart": City
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["City.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IACM;;;;;;IACG;;;;;;IACA;;;;;;IACD;;;;;;oBASqC;AAAS,oDAC9C,AAAI,IAAA,QAAC,iCACH,AAAI,IAAA,QAAC,sCACF,AAAI,IAAA,QAAC,oBACD,iDAAS,AAAI,IAAA,QAAC;IAC5B;;AAEgC,uDAC/B,MAAM,SACN,QAAQ,WACR,WAAW,cACX,SAAS,AAAM;IAChB;;;QAlBM;QACA;QACA;QACA;IAHA;IACA;IACA;IACA;;EACL;;;;;;;;;;;;;;;;;;;;;IAkBK;;;;;;IACA;;;;;;oBAOqC;AAAS,yDAClC,WAAZ,AAAI,IAAA,QAAC,kDACO,WAAZ,AAAI,IAAA,QAAC;IACX;;AAEgC,uDAC/B,OAAO,UACP,OAAO;IACR;;;QAZM;QACA;IADA;IACA;;EACL","file":"City.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["City.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IACM;;;;;;IACG;;;;;;IACA;;;;;;IACD;;;;;;oBASqC;AAAS,oDAC9C,AAAI,IAAA,QAAC,iCACH,AAAI,IAAA,QAAC,sCACF,AAAI,IAAA,QAAC,oBACD,iDAAS,AAAI,IAAA,QAAC;IAC5B;;AAEgC,uDAC/B,MAAM,SACN,QAAQ,WACR,WAAW,cACX,SAAS,AAAM;IAChB;;;QAlBM;QACA;QACA;QACA;IAHA;IACA;IACA;IACA;;EACL;;;;;;;;;;;;;;;;;IAkBK;;;;;;IACA;;;;;;oBAOqC;AAAS,yDAClC,WAAZ,AAAI,IAAA,QAAC,kDACO,WAAZ,AAAI,IAAA,QAAC;IACX;;AAEgC,uDAC/B,OAAO,UACP,OAAO;IACR;;;QAZM;QACA;IADA;IACA;;EACL","file":"City.ddc.js"}');
   // Exports:
   return {
     model__City: City
