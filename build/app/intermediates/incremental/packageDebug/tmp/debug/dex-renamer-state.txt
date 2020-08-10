@@ -1,4 +1,4 @@
-#Tue Dec 03 00:24:27 BDT 2019
+#Tue Aug 11 00:01:38 BDT 2020
 base.0=D\:\\FlutterWorks\\weatherly\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
